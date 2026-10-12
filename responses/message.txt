@@ -1,0 +1,76 @@
+[2025.06.24-05.48.46:239][460]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.48.51:114][ 46]LogOnlineParty: MCP: TIMING OUT TASK [UpdateParty] -> EVENT [PartyUpdated] 30.005849 seconds
+[2025.06.24-05.48.51:114][ 46]LogOnlineParty: MCP: TIMING OUT TASK [UpdatePartyMemberData] -> EVENT [MemberStateUpdated] 30.005838 seconds
+[2025.06.24-05.48.51:239][ 60]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.48.51:282][ 66]LogOnlineParty: MCP: TIMING OUT TASK [UpdateParty] -> EVENT [PartyUpdated] 30.000824 seconds
+[2025.06.24-05.48.53:257][303]LogMatchmakingServiceDedicatedServer: Verbose: HandleWebSocketMessage - Received message: "{"name":"AssignMatch","payload":{"bucketId":"Fortnite:Fortnite:18527799:0:NAE:playlist_defaultsolo","matchId":"54752db17c9c48608eb81ca9190840b3","matchOptions":"","matchOptionsV2":{},"spectators":[],"teams":[[["supersigma2"]]]}}"
+[2025.06.24-05.48.53:257][303]LogMatchmakingServiceDedicatedServer: HandleAssignMatchMessage - GameId: Fortnite AppId Fortnite BuildId: 18527799 HotfixVersion: 0 RegionId: NAE GroupId:  PoolId:  SplitId: 0, PlaylistName: Playlist_DefaultSolo
+[2025.06.24-05.48.53:257][303]LogMatchmakingServiceDedicatedServer: HandleAssignMatchMessage - BucketId: 'Fortnite:Fortnite:18527799:0:NAE:playlist_defaultsolo', PlaylistName: Playlist_DefaultSolo
+[2025.06.24-05.48.53:257][303]LogMatchmakingServiceDedicatedServer: ChangeState - 'WaitingForMatchAssignment' -> 'HandlingMatchAssignment'
+[2025.06.24-05.48.53:257][303]LogOnlineGame: MMS - state changed from: WaitingForMatchAssignment to: HandlingMatchAssignment
+[2025.06.24-05.48.53:257][303]LogOnlineGame: OnMatchmakingSessionAssignMatchRequestV2: Current DADTestValue: 0
+[2025.06.24-05.48.53:257][303]LogOnlineDataAssetDirectory: Requesting asset: https://data-asset-directory-public-service-prod.ol.epicgames.com/api/v1/assets/Fortnite/%2B%2BFortnite%2BRelease-19.10/18675304/FortPlaylistAthena/Playlist_DefaultSolo?revision=0&appId=Fortnite
+[2025.06.24-05.48.53:315][310]LogOnlineDataAssetDirectory: GetAsset_HttpRequestComplete: bSucceeded: 1 Status: 200
+[2025.06.24-05.48.53:316][310]LogDataAssetDirectoryPatcher: Display: Soft warning: 'UIDisplaySubName' property: localized text lookup returned empty string
+[2025.06.24-05.48.53:317][310]LogDataAssetDirectoryPatcher: Display: Soft warning: 'JoinInProgressMatchType' property: localized text lookup returned empty string
+[2025.06.24-05.48.53:317][310]LogOnlineGame: MMS - configuring beacon for match assignment, MatchId: 54752db17c9c48608eb81ca9190840b3
+[2025.06.24-05.48.53:317][310]LogPartyBeacon: Display: Beacon State: team count (100), team size (1), host team (45)
+[2025.06.24-05.48.53:317][310]LogPartyBeacon: Display: Reconfiguring to team count (100), team size (1)
+[2025.06.24-05.48.53:317][310]LogPartyBeacon: Beacon (FortPartyBeaconClient) reconfiguring team and player count.
+[2025.06.24-05.48.53:317][310]LogPartyBeacon: evaluating whether to override default team assignments - MaxTeamSize: 1, MaxTeamCount: 100, Playlist: 'Playlist_DefaultSolo', overrides for playlist: 0
+[2025.06.24-05.48.53:317][310]LogPartyBeacon: using standard (non-overridden) team assignments
+[2025.06.24-05.48.53:317][310]LogPartyBeacon: HandleMatchAssignment team count before party assignment: 1
+[2025.06.24-05.48.53:317][310]LogPartyBeacon: team: 0, party: 0, playerId: 'supersigma2'
+[2025.06.24-05.48.53:317][310]LogPartyBeacon: end of HandleMatchAssignment, NumConsumedReservations: 1
+[2025.06.24-05.48.53:317][310]LogOnlineGame: MMS - successfully configured beacon, registering players
+[2025.06.24-05.48.53:317][310]LogOnlineGame: [OnMatchmakingSessionAssignMatchRequestV2] player 'super...igma2' in SquadId 1 added to TeamIdx 0 (1 in squad, 1 in team; 1 total teams) bSquadFilled 0
+[2025.06.24-05.48.53:317][310]LogOnlineGame: MMS - querying user info in non-blocking mode
+[2025.06.24-05.48.53:317][310]LogOnlineGame: MMS - registering 1 players for the match
+[2025.06.24-05.48.53:318][310]LogCsvProfiler: Display: Metadata set : buildconfig="Shipping"
+[2025.06.24-05.48.53:318][310]LogCsvProfiler: Display: Metadata set : sessionid="8c3c2124-a7a7-4afc-b20e-37360623067a"
+[2025.06.24-05.48.53:323][310]LogCsvProfiler: Display: Metadata set : playlistid="Playlist_Vamp_Solo"
+[2025.06.24-05.48.53:324][310]LogFort: Display: [CheckForRestartReasons]
+[2025.06.24-05.48.53:324][310]LogFort: [RestartCheck] (postfork) bIsCreativeModePlaylist? FALSE, CuratedHubAtForkTime: , NumCuratedIslandsAtForkTime: 0, NumPlaylistFlagsAtForkTime: 0, PreloadRevisionAtForkTime: 0, NumEventsRequiringNewMasterProcessAtForkTime: 0, Num:DisabledGameFeaturePluginsAtForkTime: 1
+[2025.06.24-05.48.53:324][310]LogFortCreativeDiscoverySurfaceManager: HandleDataAssetDirectoryUpdateComplete: party leader: marking all surfaces as dirty
+[2025.06.24-05.48.54:519][310]LogCore: Warning: LIGHTWEIGHT_TIME_GUARD: FTickFunctionTask - Athena_GameMode_C /Game/Athena/Artemis/Maps/Artemis_Terrain.Artemis_Terrain:PersistentLevel.Athena_GameMode_C_2147480911[TickActor] took 1195.56ms!
+[2025.06.24-05.48.54:520][311]LogOnlineSession: MCP: Sending UpdateInternetSession request. url=https://fortnite-public-service-prod11.ol.epicgames.com/fortnite/api/matchmaking/session/8c3c2124-a7a7-4afc-b20e-37360623067a, json=<Payload>
+[2025.06.24-05.48.54:538][314]LogOnlineSession: Verbose: MCP: UpdateSessionUrl request complete. url=https://fortnite-public-service-prod11.ol.epicgames.com/fortnite/api/matchmaking/session/8c3c2124-a7a7-4afc-b20e-37360623067a code=200 response=<Payload>
+[2025.06.24-05.48.54:546][315]LogOnlineSession: Warning: MCP: Local registration view mismatch
+[2025.06.24-05.48.54:547][315]LogOnlineSession: Warning: MCP: Open slots count mismatch
+[2025.06.24-05.48.54:547][315]LogOnlineSession: Warning: MCP: Session: GameSession, mismatch in player registration 
+ maxpub: 120 maxpriv: 0
+ openpub: 120 openpriv: 0
+ backend: 0 local: 2 nummatches: 0
+ pendingadds: 1 pendingremoves: 0
+[2025.06.24-05.48.54:547][315]LogOnlineGame: Verbose: OnUpdateSessionInternal GameSession 1
+[2025.06.24-05.48.54:547][315]LogOnlineGame: Verbose: OnUpdateSessionComplete GameSession 1
+[2025.06.24-05.48.54:547][315]LogOnlineSession: MCP: Sending RegisterPlayers request. url=https://fortnite-public-service-prod11.ol.epicgames.com/fortnite/api/matchmaking/session/8c3c2124-a7a7-4afc-b20e-37360623067a/players, json=<Payload>
+[2025.06.24-05.48.54:572][318]LogOnlineSession: Verbose: MCP: RegisterPlayers request complete. url=https://fortnite-public-service-prod11.ol.epicgames.com/fortnite/api/matchmaking/session/8c3c2124-a7a7-4afc-b20e-37360623067a/players code=200 response=<Payload>
+[2025.06.24-05.48.54:596][321]LogOnlineSession: Warning: MCP: Local registration view mismatch
+[2025.06.24-05.48.54:597][321]LogOnlineSession: Warning: MCP: Open slots count mismatch
+[2025.06.24-05.48.54:597][321]LogOnlineSession: Warning: MCP: Session: GameSession, mismatch in player registration 
+ maxpub: 120 maxpriv: 0
+ openpub: 120 openpriv: 0
+ backend: 1 local: 2 nummatches: 1
+ pendingadds: 0 pendingremoves: 0
+[2025.06.24-05.48.54:597][321]LogOnlineGame: MMS - successfully registered players, responding ready to match assignment
+[2025.06.24-05.48.54:597][321]LogMatchmakingServiceDedicatedServer: RespondToMatchAssignment - Responding to match assignment: '54752db17c9c48608eb81ca9190840b3', bSuccess: 'ready'
+[2025.06.24-05.48.54:597][321]LogMatchmakingServiceDedicatedServer: Verbose: SendWebSocketMessage - Sending message: "{"name":"AssignMatchResult","payload":{"matchId":"54752db17c9c48608eb81ca9190840b3","result":"ready"}}"
+[2025.06.24-05.48.57:038][613]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.49.02:038][213]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.49.02:389][256]LogOnlineParty: MCP: TIMING OUT TASK [UpdateParty] -> EVENT [PartyUpdated] 30.008125 seconds
+[2025.06.24-05.49.07:039][813]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.49.10:489][228]LogMatchmakingServiceDedicatedServer: VeryVerbose: PING -->
+[2025.06.24-05.49.12:040][413]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.49.17:043][ 13]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.49.22:043][613]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.49.27:044][213]LogFortLoadingScreen: Loading screen showing: 1. Reason: Not splitscreen and no local player controllers
+[2025.06.24-05.49.31:586][759]LogOnlineGame: Verbose: FortGameSessionDedicatedAthena::OnVerifyAuthComplete(): Resolving eligibility for player [supersigmagmailcom]...
+[2025.06.24-05.49.31:586][759]LogFortPlayerEligibilityResolver: Resolving player eligibility for player [supersigmagmailcom]
+[2025.06.24-05.49.31:697][759]LogWindows: Error: === Critical error: ===
+[2025.06.24-05.49.31:698][759]LogWindows: Error: 
+[2025.06.24-05.49.31:698][759]LogWindows: Error: Fatal error!
+[2025.06.24-05.49.31:698][759]LogWindows: Error: 
+[2025.06.24-05.49.31:698][759]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000000000014
+[2025.06.24-05.49.31:698][759]LogWindows: Error: 
+[2025.06.24-05.49.31:698][759]LogWindows: Error: [Call

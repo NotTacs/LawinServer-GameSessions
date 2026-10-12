@@ -1,0 +1,79 @@
+[
+  {
+    "accountId": "Player",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-05-08T20:52:08.464Z",
+    "favorite": false
+  },
+  {
+    "accountId": "Host",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-05-08T20:56:57.426Z",
+    "favorite": false
+  },
+  {
+    "accountId": "90n13umk",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-05-25T17:31:44.418Z",
+    "favorite": false
+  },
+  {
+    "accountId": "supersigma",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-05-26T19:29:52.044Z",
+    "favorite": false
+  },
+  {
+    "accountId": "supersigmagmailcom",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-05-29T06:16:57.535Z",
+    "favorite": false
+  },
+  {
+    "accountId": "test1",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-05-29T06:17:15.515Z",
+    "favorite": false
+  },
+  {
+    "accountId": "test1itztivacom",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-05-30T00:51:51.347Z",
+    "favorite": false
+  },
+  {
+    "accountId": "supersigma2",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-06-20T20:42:33.386Z",
+    "favorite": false
+  },
+  {
+    "accountId": "Zonngster",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-06-24T17:12:01.776Z",
+    "favorite": false
+  },
+  {
+    "accountId": "LawinServer",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2025-06-24T17:23:43.729Z",
+    "favorite": false
+  },
+  {
+    "accountId": "jamal",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2026-10-12T02:25:53.340Z",
+    "favorite": false
+  }
+]
