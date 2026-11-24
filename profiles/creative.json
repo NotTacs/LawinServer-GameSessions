@@ -2,14 +2,52 @@
   "_id": "LawinServer",
   "created": "0001-01-01T00:00:00.000Z",
   "updated": "0001-01-01T00:00:00.000Z",
-  "rvn": 1,
+  "rvn": 11,
   "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "creative",
   "version": "no_version",
-  "items": {},
-  "stats": {
-    "attributes": {}
+  "items": {
+    "6a7af90d-02c5-40ef-935e-33f503fce0d7": {
+      "templateId": "CreativePlot:temperate_medium",
+      "attributes": {
+        "islandIndex": 1,
+        "locale": "en",
+        "title": "My Island",
+        "tagline": "",
+        "descriptionTags": [],
+        "introduction": "",
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1,
+        "item_seen": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "26b10b7f-eaa9-4055-80ef-f54b35f3a510": {
+      "templateId": "CreativePlot:Oasis_Giant",
+      "attributes": {
+        "islandIndex": 2,
+        "locale": "en",
+        "title": "",
+        "tagline": "",
+        "descriptionTags": [],
+        "introduction": "",
+        "last_used_date": "2026-11-14T00:38:30.028Z",
+        "level": 1,
+        "item_seen": false,
+        "favorite": false
+      },
+      "quantity": 1
+    }
   },
-  "commandRevision": 0
+  "stats": {
+    "attributes": {
+      "permissions": [
+        "fortnite:creative:beta:creatorportal"
+      ],
+      "max_island_plots": 25
+    }
+  },
+  "commandRevision": 11
 }

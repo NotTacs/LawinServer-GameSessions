@@ -46,11 +46,11 @@ express.use((req, res, next) => {
     return next();
 });
 
-// Set support a creator code
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (req, res) => {
     const profile = require("./../profiles/common_core.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -61,7 +61,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (r
         if (req.body.affiliateName.toLowerCase() == code.toLowerCase() || req.body.affiliateName == "") {
             profile.stats.attributes.mtx_affiliate_set_time = new Date().toISOString();
             profile.stats.attributes.mtx_affiliate = req.body.affiliateName;
-            
+
             StatChanged = true;
         }
     })
@@ -85,7 +85,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (r
         fs.writeFileSync("./profiles/common_core.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -105,11 +105,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (r
     res.end();
 });
 
-// Set STW banner
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -162,7 +162,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -182,11 +182,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (
     res.end();
 });
 
-// Set Homebase Name STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseName", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -231,7 +231,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseName", async (re
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -251,11 +251,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseName", async (re
     res.end();
 });
 
-// Buy skill tree perk STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -288,7 +288,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -308,14 +308,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
     res.end();
 });
 
-// Open Winterfest presents (11.31, 19.01 & 23.10)
+
 express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
     const common_core = require("./../profiles/common_core.json");
     const WinterFestIDS = require("./../responses/Athena/winterfestRewards.json");
     const memory = functions.GetVersionInfo(req);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var BaseRevision = profile.rvn || 0;
@@ -326,7 +326,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
     var Season = "Season" + memory.season;
 
     const GiftID = functions.MakeID();
-    profile.items[GiftID] = {"templateId":"GiftBox:gb_winterfestreward","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":[],"level":1,"item_seen":false,"xp":0,"giftedOn":new Date().toISOString(),"params":{"SubGame":"Athena","winterfestGift":"true"},"favorite":false},"quantity":1};
+    profile.items[GiftID] = { "templateId": "GiftBox:gb_winterfestreward", "attributes": { "max_level_bonus": 0, "fromAccountId": "", "lootList": [], "level": 1, "item_seen": false, "xp": 0, "giftedOn": new Date().toISOString(), "params": { "SubGame": "Athena", "winterfestGift": "true" }, "favorite": false }, "quantity": 1 };
 
     if (req.body.nodeId && req.body.rewardGraphId) {
         for (var i = 0; i < WinterFestIDS[Season][req.body.nodeId].length; i++) {
@@ -374,7 +374,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
                         },
                         "quantity": 1
                     };
-        
+
                     MultiUpdate[0].profileChanges.push({
                         "changeType": "itemAdded",
                         "itemId": ID,
@@ -386,11 +386,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
 
                 common_core.rvn += 1;
                 common_core.commandRevision += 1;
-        
+
                 MultiUpdate[0].profileRevision = common_core.rvn || 0;
                 MultiUpdate[0].profileCommandRevision = common_core.commandRevision || 0;
 
-                profile.items[GiftID].attributes.lootList.push({"itemType":Reward,"itemGuid":ID,"itemProfile":"common_core","attributes":{"creation_time":new Date().toISOString()},"quantity":1})
+                profile.items[GiftID].attributes.lootList.push({ "itemType": Reward, "itemGuid": ID, "itemProfile": "common_core", "attributes": { "creation_time": new Date().toISOString() }, "quantity": 1 })
             }
 
             if (!Reward.toLowerCase().startsWith("homebasebannericon:")) {
@@ -422,7 +422,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
                         },
                         "quantity": 1
                     };
-        
+
                     ApplyProfileChanges.push({
                         "changeType": "itemAdded",
                         "itemId": ID,
@@ -432,7 +432,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
 
                 ItemExists = false;
 
-                profile.items[GiftID].attributes.lootList.push({"itemType":Reward,"itemGuid":ID,"itemProfile":"athena","attributes":{"creation_time":new Date().toISOString()},"quantity":1})
+                profile.items[GiftID].attributes.lootList.push({ "itemType": Reward, "itemGuid": ID, "itemProfile": "athena", "attributes": { "creation_time": new Date().toISOString() }, "quantity": 1 })
             }
         }
         profile.items[req.body.rewardGraphId].attributes.reward_keys[0].unlock_keys_used += 1;
@@ -481,7 +481,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
         }
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -502,17 +502,17 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
     res.end();
 });
 
-// Remove gift box
+
 express.post("/fortnite/api/game/v2/profile/*/client/RemoveGiftBox", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
-    // Gift box ID on 11.31
+
     if (req.body.giftBoxItemId) {
         var id = req.body.giftBoxItemId;
 
@@ -526,7 +526,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RemoveGiftBox", async (req,
         StatChanged = true;
     }
 
-    // Gift box ID on 19.01
+
     if (req.body.giftBoxItemIds) {
         for (var i in req.body.giftBoxItemIds) {
             var id = req.body.giftBoxItemIds[i];
@@ -549,7 +549,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RemoveGiftBox", async (req,
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -569,11 +569,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/RemoveGiftBox", async (req,
     res.end();
 });
 
-// Set party assist quest
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetPartyAssistQuest", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -597,7 +597,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPartyAssistQuest", async
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -617,11 +617,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPartyAssistQuest", async
     res.end();
 });
 
-// Set pinned BR quest
+
 express.post("/fortnite/api/game/v2/profile/*/client/AthenaPinQuest", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -645,7 +645,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AthenaPinQuest", async (req
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -665,11 +665,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/AthenaPinQuest", async (req
     res.end();
 });
 
-// Set pinned STW quests
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -693,7 +693,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -713,11 +713,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
     res.end();
 });
 
-// Replace Daily Quests
+
 express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
@@ -795,7 +795,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -816,11 +816,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
     res.end();
 });
 
-// Mark New Quest Notification Sent
+
 express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSent", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -850,7 +850,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -870,14 +870,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
     res.end();
 });
 
-// Check for new quests
+
 express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
     var AthenaQuestIDS = JSON.parse(JSON.stringify(require("./../responses/Athena/quests.json")));
     var CampaignQuestIDS = JSON.parse(JSON.stringify(require("./../responses/Campaign/quests.json")));
     const memory = functions.GetVersionInfo(req);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -905,7 +905,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                 }
             }
 
-            // Grant completed founder's pack quests.
+
             if (config.Profile.bGrantFoundersPacks == true) {
                 var QuestsToGrant = [
                     "Quest:foundersquest_getrewards_0_1",
@@ -1030,7 +1030,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
 
             StatChanged = true;
         }
-    } catch (err) {}
+    } catch (err) { }
 
     for (var key in profile.items) {
         if (key.startsWith("QS") && Number.isInteger(Number(key[2])) && Number.isInteger(Number(key[3])) && key[4] === "-") {
@@ -1049,7 +1049,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
 
     if (SeasonQuestIDS) {
         var QuestsToAdd = [];
-        
+
         if (req.query.profileId == "athena") {
             for (var ChallengeBundleScheduleID in SeasonQuestIDS.ChallengeBundleSchedules) {
                 if (profile.items.hasOwnProperty(ChallengeBundleScheduleID)) {
@@ -1137,7 +1137,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
 
                 StatChanged = true;
             }
-        } else { // For STW just get all the Quests available due to no ChallengeBundles
+        } else {
             for (var key in SeasonQuestIDS.Quests) {
                 QuestsToAdd.push(key)
             }
@@ -1217,7 +1217,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1237,11 +1237,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
     res.end();
 });
 
-// Reset item STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/RefundItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -1277,7 +1277,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundItem", async (req, re
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1297,12 +1297,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundItem", async (req, re
     res.end();
 });
 
-// Refund V-Bucks purchase
+
 express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "common_core"}.json`);
     const ItemProfile = require("./../profiles/athena.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var BaseRevision = profile.rvn || 0;
@@ -1335,13 +1335,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
                     if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
                         if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
                             profile.items[key].quantity += profile.stats.attributes.mtx_purchase_history.purchases[i].totalMtxPaid;
-        
+
                             ApplyProfileChanges.push({
                                 "changeType": "itemQuantityChanged",
                                 "itemId": key,
                                 "quantity": profile.items[key].quantity
                             })
-        
+
                             break;
                         }
                     }
@@ -1350,14 +1350,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
         }
 
         for (var i in ItemGuids) {
-			try {
-				delete ItemProfile.items[ItemGuids[i]]
+            try {
+                delete ItemProfile.items[ItemGuids[i]]
 
-				MultiUpdate[0].profileChanges.push({
-					"changeType": "itemRemoved",
-					"itemId": ItemGuids[i]
-				})
-			} catch (err) {}
+                MultiUpdate[0].profileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": ItemGuids[i]
+                })
+            } catch (err) { }
         }
 
         ItemProfile.rvn += 1;
@@ -1369,7 +1369,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
     }
 
     if (StatChanged == true) {
-        
+
         ApplyProfileChanges.push({
             "changeType": "statModified",
             "name": "mtx_purchase_history",
@@ -1383,7 +1383,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
         fs.writeFileSync(`./profiles/athena.json`, JSON.stringify(ItemProfile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1404,11 +1404,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
     res.end();
 });
 
-// Increase a named counter value (e.g. when selecting a game mode)
+
 express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -1436,7 +1436,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat",
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1456,13 +1456,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat",
     res.end();
 });
 
-// Claim STW daily reward
+
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     const DailyRewards = require("./../responses/Campaign/dailyRewards.json");
     const memory = functions.GetVersionInfo(req);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
@@ -1502,7 +1502,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1523,11 +1523,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
     res.end();
 });
 
-// Update quest client objectives
+
 express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -1549,7 +1549,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives
 
             for (var i = 0; i < QuestsToUpdate.length; i++) {
                 var bIncomplete = false;
-                
+
                 profile.items[QuestsToUpdate[i]].attributes[`completion_${req.body.advance[i].statName}`] = req.body.advance[i].count;
 
                 ApplyProfileChanges.push({
@@ -1567,10 +1567,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives
                             }
                         }
                     }
-    
+
                     if (bIncomplete == false) {
                         profile.items[QuestsToUpdate[i]].attributes.quest_state = "Claimed";
-    
+
                         ApplyProfileChanges.push({
                             "changeType": "itemAttrChanged",
                             "itemId": QuestsToUpdate[i],
@@ -1592,7 +1592,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1612,11 +1612,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives
     res.end();
 });
 
-// Equip team perk STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/AssignTeamPerkToLoadout", async (req, res) => {
     const profile = require("./../profiles/campaign.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -1641,7 +1641,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignTeamPerkToLoadout", a
         fs.writeFileSync("./profiles/campaign.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1661,11 +1661,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignTeamPerkToLoadout", a
     res.end();
 });
 
-// Equip gadget STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/AssignGadgetToLoadout", async (req, res) => {
     const profile = require("./../profiles/campaign.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -1707,7 +1707,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignGadgetToLoadout", asy
         fs.writeFileSync("./profiles/campaign.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1727,11 +1727,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignGadgetToLoadout", asy
     res.end();
 });
 
-// Assign worker to squad STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -1793,7 +1793,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1813,11 +1813,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async
     res.end();
 });
 
-// Assign multiple workers to squad STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquadBatch", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -1880,7 +1880,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquadBatch", 
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -1900,14 +1900,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquadBatch", 
     res.end();
 });
 
-// Claim STW quest reward
+
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     const common_core = require("./../profiles/common_core.json");
     const theater0 = require("./../profiles/theater0.json");
     var Rewards = require("./../responses/Campaign/rewards.json").quest;
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
@@ -1965,8 +1965,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
                 const templateId = Rewards[i].templateId.toLowerCase();
 
                 if (templateId.startsWith("weapon:") || templateId.startsWith("trap:") || templateId.startsWith("ammo:")) {
-                    var Item = {"templateId":Rewards[i].templateId,"attributes":{"clipSizeScale": 0,"loadedAmmo": 999,"level": 1,"alterationDefinitions": [],"baseClipSize": 999,"durability": 375,"itemSource": "", "item_seen": false},"quantity":Rewards[i].quantity};
-                    
+                    var Item = { "templateId": Rewards[i].templateId, "attributes": { "clipSizeScale": 0, "loadedAmmo": 999, "level": 1, "alterationDefinitions": [], "baseClipSize": 999, "durability": 375, "itemSource": "", "item_seen": false }, "quantity": Rewards[i].quantity };
+
                     theater0.items[ID] = Item;
 
                     MultiUpdate[0].profileChanges.push({
@@ -1985,8 +1985,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
                     TheaterStatChanged = true;
                 }
                 else if (req.query.profileId == "campaign" && (templateId.startsWith("homebasebannericon:") || templateId == "token:founderchatunlock")) {
-                    var Item = {"templateId":Rewards[i].templateId,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"favorite":false},"quantity":Rewards[i].quantity};
-                    
+                    var Item = { "templateId": Rewards[i].templateId, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "favorite": false }, "quantity": Rewards[i].quantity };
+
                     common_core.items[ID] = Item;
 
                     MultiUpdate[1].profileChanges.push({
@@ -2005,8 +2005,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
                     CommonCoreStatChanged = true;
                 }
                 else {
-                    var Item = {"templateId":Rewards[i].templateId,"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":Rewards[i].quantity};
-                    
+                    var Item = { "templateId": Rewards[i].templateId, "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": Rewards[i].quantity };
+
                     if (templateId.startsWith("quest:")) {
                         Item.attributes.quest_state = "Active";
                     }
@@ -2018,7 +2018,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
                         "itemId": ID,
                         "item": profile.items[ID]
                     })
-                    
+
                     Notifications[0].loot.items.push({
                         "itemType": Rewards[i].templateId,
                         "itemGuid": ID,
@@ -2073,7 +2073,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2095,11 +2095,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
     res.end();
 });
 
-// Level item up STW 1
+
 express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -2124,7 +2124,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItem", async (req, r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2144,11 +2144,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItem", async (req, r
     res.end();
 });
 
-// Level slotted item up STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/UpgradeSlottedItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "collection_book_people0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -2179,7 +2179,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeSlottedItem", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "collection_book_people0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2199,11 +2199,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeSlottedItem", async 
     res.end();
 });
 
-// Level item up STW 2
+
 express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemBulk", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -2230,7 +2230,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemBulk", async (re
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2250,11 +2250,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemBulk", async (re
     res.end();
 });
 
-// Evolve item STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
@@ -2278,7 +2278,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, r
             profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t01/ig, "T02");
         }
 
-        // Conversion Index: 0 = Ore, 1 = Crystal
+
         if (req.body.conversionIndex == 1) {
             profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/ore/ig, "Crystal");
         }
@@ -2325,7 +2325,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2346,11 +2346,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, r
     res.end();
 });
 
-// Evolve slotted item STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "collection_book_people0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
@@ -2374,7 +2374,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async 
             profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t01/ig, "T02");
         }
 
-        // Conversion Index: 0 = Ore, 1 = Crystal
+
         if (req.body.conversionIndex == 1) {
             profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/ore/ig, "Crystal");
         }
@@ -2421,7 +2421,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "collection_book_people0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2442,11 +2442,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async 
     res.end();
 });
 
-// Upgrade item rarity STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemRarity", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
@@ -2512,7 +2512,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemRarity", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2533,11 +2533,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemRarity", async (
     res.end();
 });
 
-// Super charge item STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -2562,7 +2562,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2582,12 +2582,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, r
     res.end();
 });
 
-// Transform items STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     var transformItemIDS = require("./../responses/Campaign/transformItemIDS.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
@@ -2622,7 +2622,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
 
         const randomNumber = Math.floor(Math.random() * transformItemIDS.length);
         const ID = functions.MakeID();
-        var Item = {"templateId":transformItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+        var Item = { "templateId": transformItemIDS[randomNumber], "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": 1 };
         if (transformItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
             Item.attributes = functions.MakeSurvivorAttributes(transformItemIDS[randomNumber]);
         }
@@ -2652,7 +2652,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2673,13 +2673,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
     res.end();
 });
 
-// Craft item STW (Guns, melees and traps only)
+
 express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req, res) => {
     const memory = functions.GetVersionInfo(req);
 
     const profile = require(`./../profiles/${req.query.profileId || "theater0"}.json`);
     var schematic_profile;
-    // do not change this
+
     var chosen_profile = false;
 
     if (4 <= memory.season || memory.build == 3.5 || memory.build == 3.6 && chosen_profile == false) {
@@ -2692,7 +2692,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
         chosen_profile = true;
     }
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
@@ -2722,12 +2722,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
             ItemIDType = "TID_";
         }
 
-        // Fixes for items that have a slightly different WID from the SID    
-        // Lightning Pistol    
+
         if (Item.templateId.toLowerCase().startsWith("schematic:sid_pistol_vacuumtube_auto_")) {
             Item.templateId = `Schematic:SID_Pistol_Auto_VacuumTube_${Item.templateId.substring(37)}`
         }
-        // Snowball Launcher
+
         if (Item.templateId.toLowerCase().startsWith("schematic:sid_launcher_grenade_winter_")) {
             Item.templateId = `Schematic:SID_Launcher_WinterGrenade_${Item.templateId.substring(38)}`
         }
@@ -2742,36 +2741,36 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
                     if (!Item.templateId.toLowerCase().includes("t01")) {
                         Item.attributes.level = 10;
                     }
-                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T01"
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length - 3) + "T01"
                     Item.templateId = Item.templateId.replace(/_crystal_/ig, "_Ore_")
-                break;
+                    break;
 
                 case "ii":
                     if (!Item.templateId.toLowerCase().includes("t02")) {
                         Item.attributes.level = 20;
                     }
-                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T02"
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length - 3) + "T02"
                     Item.templateId = Item.templateId.replace(/_crystal_/ig, "_Ore_")
-                break;
+                    break;
 
                 case "iii":
                     if (!Item.templateId.toLowerCase().includes("t03")) {
                         Item.attributes.level = 30;
                     }
-                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T03"
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length - 3) + "T03"
                     Item.templateId = Item.templateId.replace(/_crystal_/ig, "_Ore_")
-                break;
+                    break;
 
                 case "iv":
                     if (!Item.templateId.toLowerCase().includes("t04")) {
                         Item.attributes.level = 40;
                     }
-                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T04"
-                break;
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length - 3) + "T04"
+                    break;
 
                 case "v":
-                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T05"
-                break;
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length - 3) + "T05"
+                    break;
             }
         }
 
@@ -2822,7 +2821,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
         fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2843,11 +2842,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
     res.end();
 });
 
-// Destroy item STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/DestroyWorldItems", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "theater0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -2874,7 +2873,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/DestroyWorldItems", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2894,11 +2893,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/DestroyWorldItems", async (
     res.end();
 });
 
-// Disassemble items STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/DisassembleWorldItems", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "theater0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -2940,7 +2939,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/DisassembleWorldItems", asy
         fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -2960,12 +2959,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/DisassembleWorldItems", asy
     res.end();
 });
 
-// Storage transfer STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (req, res) => {
     const theater0 = require("./../profiles/theater0.json");
     const outpost0 = require("./../profiles/outpost0.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var BaseRevision = theater0.rvn || 0;
@@ -3271,97 +3270,97 @@ express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (re
             }
         }
 
-            for (var i in req.body.outpostToTheaterItems) {
-                let id = req.body.outpostToTheaterItems[i].itemId;
-                let body_quantity = Number(req.body.outpostToTheaterItems[i].quantity);
-                if (outpost0.items[id]) {
-                    var outpost0_quantity = Number(outpost0.items[id].quantity);
-                } else {
-                    var outpost0_quantity = "Unknown";
-                }
-                if (theater0.items[id]) {
-                    var theater0_quantity = Number(theater0.items[id].quantity);
-                } else {
-                    var theater0_quantity = "Unknown";
-                }
+        for (var i in req.body.outpostToTheaterItems) {
+            let id = req.body.outpostToTheaterItems[i].itemId;
+            let body_quantity = Number(req.body.outpostToTheaterItems[i].quantity);
+            if (outpost0.items[id]) {
+                var outpost0_quantity = Number(outpost0.items[id].quantity);
+            } else {
+                var outpost0_quantity = "Unknown";
+            }
+            if (theater0.items[id]) {
+                var theater0_quantity = Number(theater0.items[id].quantity);
+            } else {
+                var theater0_quantity = "Unknown";
+            }
 
-                if (theater0.items[id] && outpost0.items[id]) {
-                    if (outpost0_quantity > body_quantity) {
-                        theater0.items[id].quantity += body_quantity;
-                        outpost0.items[id].quantity -= body_quantity;
+            if (theater0.items[id] && outpost0.items[id]) {
+                if (outpost0_quantity > body_quantity) {
+                    theater0.items[id].quantity += body_quantity;
+                    outpost0.items[id].quantity -= body_quantity;
 
-                        ApplyProfileChanges.push({
-                            "changeType": "itemQuantityChanged",
-                            "itemId": id,
-                            "quantity": theater0.items[id].quantity
-                        });
+                    ApplyProfileChanges.push({
+                        "changeType": "itemQuantityChanged",
+                        "itemId": id,
+                        "quantity": theater0.items[id].quantity
+                    });
 
-                        MultiUpdate[0].profileChanges.push({
-                            "changeType": "itemQuantityChanged",
-                            "itemId": id,
-                            "quantity": outpost0.items[id].quantity
-                        })
-                    }
-
-                    if (outpost0_quantity <= body_quantity) {
-                        theater0.items[id].quantity += body_quantity;
-
-                        delete outpost0.items[id]
-
-                        ApplyProfileChanges.push({
-                            "changeType": "itemQuantityChanged",
-                            "itemId": id,
-                            "quantity": theater0.items[id].quantity
-                        });
-
-                        MultiUpdate[0].profileChanges.push({
-                            "changeType": "itemRemoved",
-                            "itemId": id
-                        });
-                    }
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemQuantityChanged",
+                        "itemId": id,
+                        "quantity": outpost0.items[id].quantity
+                    })
                 }
 
-                if (!theater0.items[id] && outpost0.items[id]) {
-                    const Item = JSON.parse(JSON.stringify(outpost0.items[id]));
+                if (outpost0_quantity <= body_quantity) {
+                    theater0.items[id].quantity += body_quantity;
 
-                    if (outpost0_quantity > body_quantity) {
-                        outpost0.items[id].quantity -= body_quantity;
+                    delete outpost0.items[id]
 
-                        Item.quantity = body_quantity;
+                    ApplyProfileChanges.push({
+                        "changeType": "itemQuantityChanged",
+                        "itemId": id,
+                        "quantity": theater0.items[id].quantity
+                    });
 
-                        theater0.items[id] = Item;
-
-                        ApplyProfileChanges.push({
-                            "changeType": "itemAdded",
-                            "itemId": id,
-                            "item": Item
-                        })
-
-                        MultiUpdate[0].profileChanges.push({
-                            "changeType": "itemQuantityChanged",
-                            "itemId": id,
-                            "quantity": outpost0.items[id].quantity
-                        });
-                    }
-
-                    if (outpost0_quantity <= body_quantity) {
-                        theater0.items[id] = Item;
-
-                        delete outpost0.items[id]
-
-                        ApplyProfileChanges.push({
-                            "changeType": "itemAdded",
-                            "itemId": id,
-                            "item": Item
-                        })
-
-                        MultiUpdate[0].profileChanges.push({
-                            "changeType": "itemRemoved",
-                            "itemId": id
-                        })
-                    }
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemRemoved",
+                        "itemId": id
+                    });
                 }
             }
+
+            if (!theater0.items[id] && outpost0.items[id]) {
+                const Item = JSON.parse(JSON.stringify(outpost0.items[id]));
+
+                if (outpost0_quantity > body_quantity) {
+                    outpost0.items[id].quantity -= body_quantity;
+
+                    Item.quantity = body_quantity;
+
+                    theater0.items[id] = Item;
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": id,
+                        "item": Item
+                    })
+
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemQuantityChanged",
+                        "itemId": id,
+                        "quantity": outpost0.items[id].quantity
+                    });
+                }
+
+                if (outpost0_quantity <= body_quantity) {
+                    theater0.items[id] = Item;
+
+                    delete outpost0.items[id]
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": id,
+                        "item": Item
+                    })
+
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemRemoved",
+                        "itemId": id
+                    })
+                }
+            }
+        }
 
         StatChanged = true;
     }
@@ -3379,7 +3378,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (re
         fs.writeFileSync("./profiles/outpost0.json", JSON.stringify(outpost0, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -3400,11 +3399,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (re
     res.end();
 });
 
-// Modify quickbar STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/ModifyQuickbar", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "theater0"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -3448,7 +3447,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ModifyQuickbar", async (req
         fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -3468,11 +3467,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ModifyQuickbar", async (req
     res.end();
 });
 
-// Hero equipping STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -3500,7 +3499,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
                 profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = req.body.heroId || "";
 
                 StatChanged = true;
-            break;
+                break;
 
             case "FollowerSlot1":
                 if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
@@ -3522,7 +3521,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
                 profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = req.body.heroId || "";
 
                 StatChanged = true;
-            break;
+                break;
 
             case "FollowerSlot2":
                 if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
@@ -3544,7 +3543,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
                 profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = req.body.heroId || "";
 
                 StatChanged = true;
-            break;
+                break;
 
             case "FollowerSlot3":
                 if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
@@ -3566,7 +3565,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
                 profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = req.body.heroId || "";
 
                 StatChanged = true;
-            break;
+                break;
 
             case "FollowerSlot4":
                 if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
@@ -3588,7 +3587,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
                 profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = req.body.heroId || "";
 
                 StatChanged = true;
-            break;
+                break;
 
             case "FollowerSlot5":
                 if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
@@ -3610,7 +3609,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
                 profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = req.body.heroId || "";
 
                 StatChanged = true;
-            break;
+                break;
         }
     }
 
@@ -3628,7 +3627,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -3648,11 +3647,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
     res.end();
 });
 
-// Clear hero loadout STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -3714,7 +3713,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -3734,13 +3733,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (r
     res.end();
 });
 
-// Recycle items STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (req, res) => {
     const memory = functions.GetVersionInfo(req);
 
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
@@ -3859,7 +3858,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -3881,11 +3880,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (r
     res.end();
 });
 
-// Add item from collection book STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/ResearchItemFromCollectionBook", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -3924,7 +3923,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ResearchItemFromCollectionB
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -3944,11 +3943,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ResearchItemFromCollectionB
     res.end();
 });
 
-// Slot item in collection book STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
@@ -3974,7 +3973,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", 
         for (var key in collection_book_profile.items) {
             const Template1 = profile.items[req.body.itemId].templateId;
             const Template2 = collection_book_profile.items[key].templateId;
-            if (Template1.substring(0, Template1.length-4).toLowerCase() == Template2.substring(0, Template2.length-4).toLowerCase()) {
+            if (Template1.substring(0, Template1.length - 4).toLowerCase() == Template2.substring(0, Template2.length - 4).toLowerCase()) {
                 if (Template1.toLowerCase().startsWith("worker:") && Template2.toLowerCase().startsWith("worker:")) {
                     if (profile.items[req.body.itemId].attributes.hasOwnProperty("personality") && collection_book_profile.items[key].attributes.hasOwnProperty("personality")) {
                         const Personality1 = profile.items[req.body.itemId].attributes.personality;
@@ -4037,7 +4036,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", 
         fs.writeFileSync(`./profiles/${collection_book_profile.profileId || "collection_book_people0"}.json`, JSON.stringify(collection_book_profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4059,11 +4058,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", 
     res.end();
 });
 
-// Unslot item from collection book STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/UnslotItemFromCollectionBook", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
@@ -4134,7 +4133,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnslotItemFromCollectionBoo
         fs.writeFileSync(`./profiles/${collection_book_profile.profileId || "collection_book_people0"}.json`, JSON.stringify(collection_book_profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4156,11 +4155,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnslotItemFromCollectionBoo
     res.end();
 });
 
-// Claim collection book rewards STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimCollectionBookRewards", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -4184,7 +4183,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimCollectionBookRewards"
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4204,11 +4203,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimCollectionBookRewards"
     res.end();
 });
 
-// Modify schematic perk STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/RespecAlteration", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -4216,7 +4215,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecAlteration", async (r
 
     if (req.body.targetItemId && req.body.alterationId) {
         if (!profile.items[req.body.targetItemId].attributes.alterations) {
-            profile.items[req.body.targetItemId].attributes.alterations = ["","","","","",""];
+            profile.items[req.body.targetItemId].attributes.alterations = ["", "", "", "", "", ""];
         }
 
         profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot] = req.body.alterationId;
@@ -4237,7 +4236,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecAlteration", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4257,11 +4256,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecAlteration", async (r
     res.end();
 });
 
-// Upgrade schematic perk STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/UpgradeAlteration", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -4301,7 +4300,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeAlteration", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4321,11 +4320,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeAlteration", async (
     res.end();
 });
 
-// Reset research levels STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/RespecResearch", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -4353,7 +4352,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecResearch", async (req
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4373,16 +4372,16 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecResearch", async (req
     res.end();
 });
 
-// Reset upgrade levels STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/RespecUpgrades", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
-    
+
     for (var key in profile.items) {
         if (profile.items[key].templateId.toLowerCase().startsWith("homebasenode:skilltree_")) {
             profile.items[key].quantity = 0;
@@ -4404,7 +4403,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecUpgrades", async (req
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4424,11 +4423,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecUpgrades", async (req
     res.end();
 });
 
-// Upgrade research levels STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseResearchStatUpgrade", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -4453,7 +4452,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseResearchStatUpgrade
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4473,17 +4472,17 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseResearchStatUpgrade
     res.end();
 });
 
-// Upgrade levels STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseOrUpgradeHomebaseNode", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     var CreateHomebaseNode = true;
-    
+
     if (req.body.nodeId) {
         for (var key in profile.items) {
             if (profile.items[key].templateId.toLowerCase() == req.body.nodeId.toLowerCase()) {
@@ -4527,7 +4526,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseOrUpgradeHomebaseNo
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4547,12 +4546,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseOrUpgradeHomebaseNo
     res.end();
 });
 
-// Refresh expeditions STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     var expeditionData = require("./../responses/Campaign/expeditionData.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -4561,7 +4560,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
     var ExpeditionSlots = [];
     var date = new Date().toISOString();
 
-    // Check which quests that grant expedition slots are completed and add these slots to the list of available ones.
+
     for (var key in profile.items) {
         var templateId = profile.items[key].templateId.toLowerCase();
         if (expeditionData.questsUnlockingSlots.includes(templateId)) {
@@ -4571,7 +4570,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
         }
     }
 
-    // Remove the expired expeditions.
+
     for (var key in profile.items) {
         if (profile.items[key].templateId.toLowerCase().startsWith("expedition:")) {
             var expiration_end_time = new Date(profile.items[key].attributes.expedition_expiration_end_time).toISOString();
@@ -4584,7 +4583,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
                 })
 
                 StatChanged = true;
-            } else { // If the expedition is still active, remove its slot from ExpeditionSlots list so the server doesn't make a new one for it.
+            } else {
                 var index = ExpeditionSlots.indexOf(profile.items[key].attributes.expedition_slot_id);
                 if (index !== -1) {
                     ExpeditionSlots.splice(index, 1)
@@ -4593,11 +4592,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
         }
     }
 
-    // Make new expeditions
+
     for (var i = 0; i < ExpeditionSlots.length; i++) {
         var slot = ExpeditionSlots[i];
 
-        // 5% (could be different) chance of making a rare expedition
+
         var ExpeditionsToChoose = expeditionData.slots[slot];
         if (ExpeditionsToChoose.hasOwnProperty("rare") && Math.random() < 0.05) {
             ExpeditionsToChoose = ExpeditionsToChoose.rare;
@@ -4628,7 +4627,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
         }
 
         for (var x = 0; x < 3; x++) {
-            if (Math.random() < 0.2) { // 20% (could be different) chance of the expedition having a bonus criteria up to 3
+            if (Math.random() < 0.2) {
                 randomNumber = Math.floor(Math.random() * expeditionData.criteria.length);
                 Item.attributes.expedition_criteria.push(expeditionData.criteria[randomNumber])
             }
@@ -4651,7 +4650,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4671,30 +4670,30 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
     res.end();
 });
 
-// Start an expedition STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     const memory = functions.GetVersionInfo(req);
     var expeditionData = require("./../responses/Campaign/expeditionData.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
-    
+
     var date = new Date().toISOString();
 
     if (req.body.expeditionId && req.body.squadId && req.body.itemIds && req.body.slotIndices) {
         var ExpeditionLevel = profile.items[req.body.expeditionId].attributes.expedition_max_target_power;
         var HeroLevels = expeditionData.heroLevels;
-        if (memory.build < 13.20) { // The levels got changed a bit in v13.20+
+        if (memory.build < 13.20) {
             HeroLevels = HeroLevels.old;
         } else {
             HeroLevels = HeroLevels.new;
         }
 
-        // Make a list with expedition heroes sorted by their power level
+
         var SortedHeroes = []
         for (var i = 0; i < req.body.itemIds.length; i++) {
             var hero = req.body.itemIds[i];
@@ -4720,7 +4719,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
         }
         SortedHeroes.sort((a, b) => b.powerLevel - a.powerLevel);
 
-        // Check if any of the heroes meet any of the available criterias. If so, then boost their power level.
+
         if (profile.items[req.body.expeditionId].attributes.hasOwnProperty("expedition_criteria")) {
             var criteria = profile.items[req.body.expeditionId].attributes.expedition_criteria;
             for (var i = 0; i < criteria.length; i++) {
@@ -4747,7 +4746,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
             }
         }
 
-        // Calculate the expedition success chance
+
         var TotalPowerLevel = 0;
         for (var i = 0; i < SortedHeroes.length; i++) {
             TotalPowerLevel += SortedHeroes[i].powerLevel;
@@ -4757,7 +4756,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
             ExpeditionSuccessChance = 1;
         }
 
-        // Assign Squad ids and slots to selected heroes
+
         for (var i = 0; i < req.body.itemIds.length; i++) {
             var hero = req.body.itemIds[i];
             profile.items[hero].attributes.squad_id = req.body.squadId.toLowerCase();
@@ -4777,7 +4776,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
             })
         }
 
-        // Calculate the expedition end date
+
         var endDate = new Date(date);
         endDate.setMinutes(endDate.getMinutes() + expeditionData.attributes[profile.items[req.body.expeditionId].templateId].expedition_duration_minutes);
         endDate = endDate.toISOString();
@@ -4822,7 +4821,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4842,22 +4841,22 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
     res.end();
 });
 
-// Abandon an expedition STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     var expeditionData = require("./../responses/Campaign/expeditionData.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
-    
+
     var date = new Date().toISOString();
 
     if (req.body.expeditionId) {
         var squad_id = profile.items[req.body.expeditionId].attributes.expedition_squad_id;
-        for (var item2 in profile.items) { // Remove the squad ids and slots from heroes
+        for (var item2 in profile.items) {
             if (profile.items[item2].attributes.hasOwnProperty("squad_id")) {
                 if (profile.items[item2].attributes.squad_id == squad_id) {
                     profile.items[item2].attributes.squad_id = "";
@@ -4878,7 +4877,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
             }
         }
 
-        // Set the expedition back as available
+
         delete profile.items[req.body.expeditionId].attributes.expedition_squad_id
         delete profile.items[req.body.expeditionId].attributes.expedition_start_time
         delete profile.items[req.body.expeditionId].attributes.expedition_end_time
@@ -4903,7 +4902,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
 
         var expiration_end_time = new Date(profile.items[req.body.expeditionId].attributes.expedition_expiration_end_time).toISOString();
         if (date > expiration_end_time) {
-            // Remove the abandoned expedition and make a new one to replace it
+
             var slot = profile.items[req.body.expeditionId].attributes.expedition_slot_id;
             delete profile.items[req.body.expeditionId]
             ApplyProfileChanges.push({
@@ -4911,7 +4910,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
                 "itemId": req.body.expeditionId
             })
 
-            // 5% (could be different) chance of making a rare expedition
+
             var ExpeditionsToChoose = expeditionData.slots[slot];
             if (ExpeditionsToChoose.hasOwnProperty("rare") && Math.random() < 0.05) {
                 ExpeditionsToChoose = ExpeditionsToChoose.rare;
@@ -4942,7 +4941,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
             }
 
             for (var x = 0; x < 3; x++) {
-                if (Math.random() < 0.2) { // 20% (could be different) chance of the expedition having a bonus criteria up to 3
+                if (Math.random() < 0.2) {
                     randomNumber = Math.floor(Math.random() * expeditionData.criteria.length);
                     Item.attributes.expedition_criteria.push(expeditionData.criteria[randomNumber])
                 }
@@ -4967,7 +4966,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -4987,12 +4986,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
     res.end();
 });
 
-// Collect a finished expedition STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     var expeditionData = require("./../responses/Campaign/expeditionData.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
@@ -5000,7 +4999,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
-    
+
     var date = new Date().toISOString();
 
     if (req.body.expeditionId) {
@@ -5008,15 +5007,15 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
             "type": "expeditionResult",
             "primary": true,
             "client_request_id": "",
-            "bExpeditionSucceeded" : false
+            "bExpeditionSucceeded": false
         })
 
-        // Determine if the expedition was successful
+
         if (Math.random() < profile.items[req.body.expeditionId].attributes.expedition_success_chance) {
             Notifications[0].bExpeditionSucceeded = true;
             Notifications[0].expeditionRewards = [];
 
-            // If so, then grant the rewards
+
             for (var i = 0; i < expeditionData.rewards.length; i++) {
                 var randomNumber = Math.floor(Math.random() * expeditionData.rewards[i].length);
                 var ID = functions.MakeID();
@@ -5055,7 +5054,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
                         "item": Item
                     })
                 } else {
-                    var k = -1; // index of item profile in MultiUpdate
+                    var k = -1;
                     for (var x = 0; x < MultiUpdate.length; x++) {
                         if (MultiUpdate[x].profileId == itemProfile) {
                             k = x;
@@ -5084,7 +5083,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
         }
 
         var squad_id = profile.items[req.body.expeditionId].attributes.expedition_squad_id;
-        for (var item2 in profile.items) { // Remove the squad ids and slots from heroes
+        for (var item2 in profile.items) {
             if (profile.items[item2].attributes.hasOwnProperty("squad_id")) {
                 if (profile.items[item2].attributes.squad_id == squad_id) {
                     profile.items[item2].attributes.squad_id = "";
@@ -5105,7 +5104,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
             }
         }
 
-        // Make a new expedition to replace the finished one
+
         var slot = profile.items[req.body.expeditionId].attributes.expedition_slot_id;
         delete profile.items[req.body.expeditionId]
         ApplyProfileChanges.push({
@@ -5113,7 +5112,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
             "itemId": req.body.expeditionId
         })
 
-        // 5% (could be different) chance of making a rare expedition
+
         var ExpeditionsToChoose = expeditionData.slots[slot];
         if (ExpeditionsToChoose.hasOwnProperty("rare") && Math.random() < 0.05) {
             ExpeditionsToChoose = ExpeditionsToChoose.rare;
@@ -5144,7 +5143,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
         }
 
         for (var x = 0; x < 3; x++) {
-            if (Math.random() < 0.2) { // 20% (could be different) chance of the expedition having a bonus criteria up to 3
+            if (Math.random() < 0.2) {
                 randomNumber = Math.floor(Math.random() * expeditionData.criteria.length);
                 Item.attributes.expedition_criteria.push(expeditionData.criteria[randomNumber])
             }
@@ -5178,7 +5177,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
         }
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -5200,11 +5199,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
     res.end();
 });
 
-// Set active hero loadout STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -5229,7 +5228,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", asyn
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -5249,11 +5248,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", asyn
     res.end();
 });
 
-// Activate consumable STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/ActivateConsumable", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -5301,7 +5300,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ActivateConsumable", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -5321,11 +5320,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ActivateConsumable", async 
     res.end();
 });
 
-// Unassign all squads STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -5361,7 +5360,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -5381,12 +5380,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (
     res.end();
 });
 
-// Open llama STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     const cardpackData = require("./../responses/Campaign/cardPackData.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
@@ -5406,7 +5405,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
         if (cardpackData.choiceCardPacks.includes(profile.items[req.body.cardPackItemId].templateId)) {
             var ChosenItem = profile.items[req.body.cardPackItemId].attributes.options[req.body.selectionIdx];
-            var Item = {"templateId":ChosenItem.itemType,"attributes":ChosenItem.attributes,"quantity":ChosenItem.quantity};
+            var Item = { "templateId": ChosenItem.itemType, "attributes": ChosenItem.attributes, "quantity": ChosenItem.quantity };
             const ID = functions.MakeID();
 
             profile.items[ID] = Item;
@@ -5429,19 +5428,19 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
                 const ID = functions.MakeID();
                 var ItemIDS = cardpackData.default;
                 var randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+                var Item = { "templateId": ItemIDS[randomNumber], "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": 1 };
                 if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                     Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                 }
-    
-                if (Math.random() < 0.1) { // 10% (could be dfferent) chance of getting a choice CardPack.
+
+                if (Math.random() < 0.1) {
                     var CPTemplateId = cardpackData.choiceCardPacks[Math.floor(Math.random() * cardpackData.choiceCardPacks.length)];
-                    var CPItem = {"templateId":CPTemplateId,"attributes":{"level":1,"pack_source":"Store","options":[]},"quantity":1}
+                    var CPItem = { "templateId": CPTemplateId, "attributes": { "level": 1, "pack_source": "Store", "options": [] }, "quantity": 1 }
                     ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
 
                     for (var x = 0; x < 2; x++) {
                         randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                        Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+                        Item = { "itemType": ItemIDS[randomNumber], "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": 1 };
                         if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                             Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                         }
@@ -5450,15 +5449,15 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
                     }
                     Item = CPItem;
                 }
-    
+
                 profile.items[ID] = Item;
-    
+
                 ApplyProfileChanges.push({
                     "changeType": "itemAdded",
                     "itemId": ID,
                     "item": Item
                 })
-    
+
                 Notifications[0].lootGranted.items.push({
                     "itemType": ItemIDS[randomNumber],
                     "itemGuid": ID,
@@ -5486,7 +5485,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
                 "itemId": req.body.cardPackItemId,
                 "quantity": profile.items[req.body.cardPackItemId].quantity
             })
-        } catch (err) {}
+        } catch (err) { }
 
         StatChanged = true;
     }
@@ -5498,13 +5497,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    // if (QueryRevision != BaseRevision) {
-    //     ApplyProfileChanges = [{
-    //         "changeType": "fullProfileUpdate",
-    //         "profile": profile
-    //     }];
-    // }
+
 
     res.json({
         "profileRevision": profile.rvn || 0,
@@ -5519,12 +5512,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
     res.end();
 });
 
-// Add items to StW X-Ray Llamas
+
 express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     const cardpackData = require("./../responses/Campaign/cardPackData.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -5540,19 +5533,19 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
                 for (var i = 0; i < 10; i++) {
                     var ItemIDS = cardpackData.default;
                     var randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                    var Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+                    var Item = { "itemType": ItemIDS[randomNumber], "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": 1 };
                     if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                         Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                     }
-        
-                    if (Math.random() < 0.1) { // 10% (could be dfferent) chance of getting a choice Cardpack.
+
+                    if (Math.random() < 0.1) {
                         var CPTemplateId = cardpackData.choiceCardPacks[Math.floor(Math.random() * cardpackData.choiceCardPacks.length)];
-                        var CPItem = {"itemType":CPTemplateId,"attributes":{"level":1,"pack_source":"Store","options":[]},"quantity":1}
+                        var CPItem = { "itemType": CPTemplateId, "attributes": { "level": 1, "pack_source": "Store", "options": [] }, "quantity": 1 }
                         ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
 
                         for (var x = 0; x < 2; x++) {
                             randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                            Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+                            Item = { "itemType": ItemIDS[randomNumber], "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": 1 };
                             if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                                 Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                             }
@@ -5593,7 +5586,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -5613,14 +5606,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
     res.end();
 });
 
-// Purchase item
+
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
     const campaign = require("./../profiles/campaign.json");
     const athena = require("./../profiles/athena.json");
     const cardpackData = require("./../responses/Campaign/cardPackData.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
@@ -5631,12 +5624,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     var ItemExists = false;
 
     if (req.body.offerId && profile.profileId == "profile0" && PurchasedLlama == false) {
-        catalog.storefronts.forEach(function(value, a) {
+        catalog.storefronts.forEach(function (value, a) {
             if (value.name.toLowerCase().startsWith("cardpack")) {
-                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                catalog.storefronts[a].catalogEntries.forEach(function (value, b) {
                     if (value.offerId == req.body.offerId) {
                         var Quantity = 0;
-                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function (value, c) {
                             Quantity = req.body.purchaseQuantity || 1;
 
                             const Item = {
@@ -5666,22 +5659,22 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 })
                             }
                         })
-                        // Vbucks spending
+
                         if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "mtxcurrency") {
                             for (var key in profile.items) {
                                 if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
                                     if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
                                         profile.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * Quantity;
-                                                                        
+
                                         ApplyProfileChanges.push({
                                             "changeType": "itemQuantityChanged",
                                             "itemId": key,
                                             "quantity": profile.items[key].quantity
                                         })
-                                                
+
                                         profile.rvn += 1;
                                         profile.commandRevision += 1;
-                                                
+
                                         break;
                                     }
                                 }
@@ -5691,7 +5684,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                 })
             }
 
-            // Battle pass
+
             if (value.name.startsWith("BRSeason")) {
                 if (!Number.isNaN(Number(value.name.split("BRSeason")[1]))) {
                     var offer = value.catalogEntries.find(i => i.offerId == req.body.offerId);
@@ -5777,7 +5770,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"item_seen":false},"quantity":1};
+                                                var Item = { "templateId": item, "attributes": { "item_seen": false }, "quantity": 1 };
 
                                                 profile.items[ItemID] = Item;
 
@@ -5808,7 +5801,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"variants":[],"favorite":false},"quantity":FreeTier[item]}
+                                                var Item = { "templateId": item, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "variants": [], "favorite": false }, "quantity": FreeTier[item] }
 
                                                 athena.items[ItemID] = Item;
 
@@ -5878,7 +5871,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"item_seen":false},"quantity":1};
+                                                var Item = { "templateId": item, "attributes": { "item_seen": false }, "quantity": 1 };
 
                                                 profile.items[ItemID] = Item;
 
@@ -5909,7 +5902,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"variants":[],"favorite":false},"quantity":PaidTier[item]}
+                                                var Item = { "templateId": item, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "variants": [], "favorite": false }, "quantity": PaidTier[item] }
 
                                                 athena.items[ItemID] = Item;
 
@@ -5932,11 +5925,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 }
 
                                 var GiftBoxID = functions.MakeID();
-                                var GiftBox = {"templateId":Number(Season.split("Season")[1]) <= 4 ? "GiftBox:gb_battlepass" : "GiftBox:gb_battlepasspurchased","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":lootList}}
+                                var GiftBox = { "templateId": Number(Season.split("Season")[1]) <= 4 ? "GiftBox:gb_battlepass" : "GiftBox:gb_battlepasspurchased", "attributes": { "max_level_bonus": 0, "fromAccountId": "", "lootList": lootList } }
 
                                 if (Number(Season.split("Season")[1]) > 2) {
                                     profile.items[GiftBoxID] = GiftBox;
-                                    
+
                                     ApplyProfileChanges.push({
                                         "changeType": "itemAdded",
                                         "itemId": GiftBoxID,
@@ -6019,7 +6012,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"item_seen":false},"quantity":1};
+                                                var Item = { "templateId": item, "attributes": { "item_seen": false }, "quantity": 1 };
 
                                                 profile.items[ItemID] = Item;
 
@@ -6050,7 +6043,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"variants":[],"favorite":false},"quantity":FreeTier[item]}
+                                                var Item = { "templateId": item, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "variants": [], "favorite": false }, "quantity": FreeTier[item] }
 
                                                 athena.items[ItemID] = Item;
 
@@ -6120,7 +6113,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"item_seen":false},"quantity":1};
+                                                var Item = { "templateId": item, "attributes": { "item_seen": false }, "quantity": 1 };
 
                                                 profile.items[ItemID] = Item;
 
@@ -6151,7 +6144,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"variants":[],"favorite":false},"quantity":PaidTier[item]}
+                                                var Item = { "templateId": item, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "variants": [], "favorite": false }, "quantity": PaidTier[item] }
 
                                                 athena.items[ItemID] = Item;
 
@@ -6174,11 +6167,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 }
 
                                 var GiftBoxID = functions.MakeID();
-                                var GiftBox = {"templateId":"GiftBox:gb_battlepass","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":lootList}}
+                                var GiftBox = { "templateId": "GiftBox:gb_battlepass", "attributes": { "max_level_bonus": 0, "fromAccountId": "", "lootList": lootList } }
 
                                 if (Number(Season.split("Season")[1]) > 2) {
                                     profile.items[GiftBoxID] = GiftBox;
-                                    
+
                                     ApplyProfileChanges.push({
                                         "changeType": "itemAdded",
                                         "itemId": GiftBoxID,
@@ -6202,9 +6195,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
             }
 
             if (value.name.startsWith("BR")) {
-                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                catalog.storefronts[a].catalogEntries.forEach(function (value, b) {
                     if (value.offerId == req.body.offerId) {
-                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function (value, c) {
                             const ID = functions.MakeID();
 
                             for (var key in athena.items) {
@@ -6267,13 +6260,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                             ItemExists = false;
                         })
-                        // Vbucks spending
+
                         if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "mtxcurrency") {
                             for (var key in profile.items) {
                                 if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
                                     if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
                                         profile.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * req.body.purchaseQuantity || 1;
-                        
+
                                         ApplyProfileChanges.push({
                                             "changeType": "itemQuantityChanged",
                                             "itemId": key,
@@ -6293,9 +6286,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
             }
 
             if (value.name.startsWith("STW")) {
-                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                catalog.storefronts[a].catalogEntries.forEach(function (value, b) {
                     if (value.offerId == req.body.offerId) {
-                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function (value, c) {
                             const ID = functions.MakeID();
 
                             if (Notifications.length == 0) {
@@ -6308,7 +6301,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 })
                             }
 
-                            var Item = {"templateId": value.templateId, "attributes": {"legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false}, "quantity": req.body.purchaseQuantity * value.quantity || 1};
+                            var Item = { "templateId": value.templateId, "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": req.body.purchaseQuantity * value.quantity || 1 };
 
                             if (Item.templateId.toLowerCase().startsWith("worker:")) {
                                 Item.attributes = functions.MakeSurvivorAttributes(Item.templateId);
@@ -6329,18 +6322,18 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 "quantity": req.body.purchaseQuantity * value.quantity || 1
                             })
                         })
-                        // STW currency spending
+
                         if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "gameitem") {
                             for (var key in profile.items) {
                                 if (profile.items[key].templateId.toLowerCase() == catalog.storefronts[a].catalogEntries[b].prices[0].currencySubType.toLowerCase()) {
                                     profile.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * req.body.purchaseQuantity || 1;
-                                            
+
                                     ApplyProfileChanges.push({
                                         "changeType": "itemQuantityChanged",
                                         "itemId": key,
                                         "quantity": profile.items[key].quantity
                                     })
-                    
+
                                     break;
                                 }
                             }
@@ -6377,12 +6370,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     }
 
     if (req.body.offerId && profile.profileId == "common_core") {
-        catalog.storefronts.forEach(function(value, a) {
+        catalog.storefronts.forEach(function (value, a) {
             if (value.name.toLowerCase().startsWith("cardpack")) {
-                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                catalog.storefronts[a].catalogEntries.forEach(function (value, b) {
                     if (value.offerId == req.body.offerId) {
                         var Quantity = 0;
-                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function (value, c) {
                             const memory = functions.GetVersionInfo(req);
 
                             if (4 >= memory.season && PurchasedLlama == false) {
@@ -6415,7 +6408,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                 for (var i = 0; i < Quantity; i++) {
                                     var ID = functions.MakeID();
-    
+
                                     campaign.items[ID] = Item
 
                                     MultiUpdate[0].profileChanges.push({
@@ -6458,7 +6451,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                 for (var i = 0; i < Quantity; i++) {
                                     var ID = functions.MakeID();
-    
+
                                     campaign.items[ID] = Item
 
                                     MultiUpdate[0].profileChanges.push({
@@ -6512,7 +6505,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                 for (var i = 0; i < Quantity; i++) {
                                     var ID = functions.MakeID();
-    
+
                                     campaign.items[ID] = Item
 
                                     MultiUpdate[0].profileChanges.push({
@@ -6539,8 +6532,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                                 if (campaign.items[key].attributes.offerId == req.body.offerId) {
                                                     for (var item in campaign.items[key].attributes.items) {
                                                         const id = functions.MakeID();
-                                                        var Item = {"templateId":campaign.items[key].attributes.items[item].itemType,"attributes":campaign.items[key].attributes.items[item].attributes,"quantity":campaign.items[key].attributes.items[item].quantity};
-                
+                                                        var Item = { "templateId": campaign.items[key].attributes.items[item].itemType, "attributes": campaign.items[key].attributes.items[item].attributes, "quantity": campaign.items[key].attributes.items[item].quantity };
+
                                                         campaign.items[id] = Item;
 
                                                         MultiUpdate[0].profileChanges.push({
@@ -6563,19 +6556,19 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                                     for (var i = 0; i < 10; i++) {
                                                         var ItemIDS = cardpackData.default;
                                                         var randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                                                        var Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+                                                        var Item = { "itemType": ItemIDS[randomNumber], "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": 1 };
                                                         if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                                                             Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                                                         }
-                                            
-                                                        if (Math.random() < 0.1) { // 10% (could be dfferent) chance of getting a choice Cardpack.
+
+                                                        if (Math.random() < 0.1) {
                                                             var CPTemplateId = cardpackData.choiceCardPacks[Math.floor(Math.random() * cardpackData.choiceCardPacks.length)];
-                                                            var CPItem = {"itemType":CPTemplateId,"attributes":{"level":1,"pack_source":"Store","options":[]},"quantity":1}
+                                                            var CPItem = { "itemType": CPTemplateId, "attributes": { "level": 1, "pack_source": "Store", "options": [] }, "quantity": 1 }
                                                             ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
 
                                                             for (var x = 0; x < 2; x++) {
                                                                 randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                                                                Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+                                                                Item = { "itemType": ItemIDS[randomNumber], "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": 1 };
                                                                 if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                                                                     Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                                                                 }
@@ -6612,27 +6605,27 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                             })
                                         }
                                     }
-                                } catch (err) {}
+                                } catch (err) { }
 
                                 PurchasedLlama = true;
                             }
                         })
-                        // Vbucks spending
+
                         if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "mtxcurrency") {
                             for (var key in profile.items) {
                                 if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
                                     if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
                                         profile.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * Quantity;
-                                                
+
                                         ApplyProfileChanges.push({
                                             "changeType": "itemQuantityChanged",
                                             "itemId": key,
                                             "quantity": profile.items[key].quantity
                                         })
-                        
+
                                         profile.rvn += 1;
                                         profile.commandRevision += 1;
-                        
+
                                         break;
                                     }
                                 }
@@ -6642,7 +6635,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                 })
             }
 
-            // Battle pass
+
             if (value.name.startsWith("BRSeason")) {
                 if (!Number.isNaN(Number(value.name.split("BRSeason")[1]))) {
                     var offer = value.catalogEntries.find(i => i.offerId == req.body.offerId);
@@ -6728,7 +6721,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"item_seen":false},"quantity":1};
+                                                var Item = { "templateId": item, "attributes": { "item_seen": false }, "quantity": 1 };
 
                                                 profile.items[ItemID] = Item;
 
@@ -6759,7 +6752,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"variants":[],"favorite":false},"quantity":FreeTier[item]}
+                                                var Item = { "templateId": item, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "variants": [], "favorite": false }, "quantity": FreeTier[item] }
 
                                                 athena.items[ItemID] = Item;
 
@@ -6829,7 +6822,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"item_seen":false},"quantity":1};
+                                                var Item = { "templateId": item, "attributes": { "item_seen": false }, "quantity": 1 };
 
                                                 profile.items[ItemID] = Item;
 
@@ -6860,7 +6853,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"variants":[],"favorite":false},"quantity":PaidTier[item]}
+                                                var Item = { "templateId": item, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "variants": [], "favorite": false }, "quantity": PaidTier[item] }
 
                                                 athena.items[ItemID] = Item;
 
@@ -6883,11 +6876,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 }
 
                                 var GiftBoxID = functions.MakeID();
-                                var GiftBox = {"templateId":Number(Season.split("Season")[1]) <= 4 ? "GiftBox:gb_battlepass" : "GiftBox:gb_battlepasspurchased","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":lootList}}
+                                var GiftBox = { "templateId": Number(Season.split("Season")[1]) <= 4 ? "GiftBox:gb_battlepass" : "GiftBox:gb_battlepasspurchased", "attributes": { "max_level_bonus": 0, "fromAccountId": "", "lootList": lootList } }
 
                                 if (Number(Season.split("Season")[1]) > 2) {
                                     profile.items[GiftBoxID] = GiftBox;
-                                    
+
                                     ApplyProfileChanges.push({
                                         "changeType": "itemAdded",
                                         "itemId": GiftBoxID,
@@ -6970,7 +6963,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"item_seen":false},"quantity":1};
+                                                var Item = { "templateId": item, "attributes": { "item_seen": false }, "quantity": 1 };
 
                                                 profile.items[ItemID] = Item;
 
@@ -7001,7 +6994,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"variants":[],"favorite":false},"quantity":FreeTier[item]}
+                                                var Item = { "templateId": item, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "variants": [], "favorite": false }, "quantity": FreeTier[item] }
 
                                                 athena.items[ItemID] = Item;
 
@@ -7071,7 +7064,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"item_seen":false},"quantity":1};
+                                                var Item = { "templateId": item, "attributes": { "item_seen": false }, "quantity": 1 };
 
                                                 profile.items[ItemID] = Item;
 
@@ -7102,7 +7095,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                                             if (ItemExists == false) {
                                                 var ItemID = functions.MakeID();
-                                                var Item = {"templateId":item,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"variants":[],"favorite":false},"quantity":PaidTier[item]}
+                                                var Item = { "templateId": item, "attributes": { "max_level_bonus": 0, "level": 1, "item_seen": false, "xp": 0, "variants": [], "favorite": false }, "quantity": PaidTier[item] }
 
                                                 athena.items[ItemID] = Item;
 
@@ -7125,11 +7118,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 }
 
                                 var GiftBoxID = functions.MakeID();
-                                var GiftBox = {"templateId":"GiftBox:gb_battlepass","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":lootList}}
+                                var GiftBox = { "templateId": "GiftBox:gb_battlepass", "attributes": { "max_level_bonus": 0, "fromAccountId": "", "lootList": lootList } }
 
                                 if (Number(Season.split("Season")[1]) > 2) {
                                     profile.items[GiftBoxID] = GiftBox;
-                                    
+
                                     ApplyProfileChanges.push({
                                         "changeType": "itemAdded",
                                         "itemId": GiftBoxID,
@@ -7153,9 +7146,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
             }
 
             if (value.name.startsWith("BR")) {
-                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                catalog.storefronts[a].catalogEntries.forEach(function (value, b) {
                     if (value.offerId == req.body.offerId) {
-                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function (value, c) {
                             const ID = functions.MakeID();
 
                             for (var key in athena.items) {
@@ -7218,19 +7211,19 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                             ItemExists = false;
                         })
-                        // Vbucks spending
+
                         if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "mtxcurrency") {
                             for (var key in profile.items) {
                                 if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
                                     if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
                                         profile.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * req.body.purchaseQuantity || 1;
-                                                
+
                                         ApplyProfileChanges.push({
                                             "changeType": "itemQuantityChanged",
                                             "itemId": key,
                                             "quantity": profile.items[key].quantity
                                         })
-                        
+
                                         break;
                                     }
                                 }
@@ -7238,9 +7231,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                         }
 
                         if (catalog.storefronts[a].catalogEntries[b].itemGrants.length != 0) {
-                            // Add to refunding tab
+
                             var purchaseId = functions.MakeID();
-                            profile.stats.attributes.mtx_purchase_history.purchases.push({"purchaseId":purchaseId,"offerId":`v2:/${purchaseId}`,"purchaseDate":new Date().toISOString(),"freeRefundEligible":false,"fulfillments":[],"lootResult":Notifications[0].lootResult.items,"totalMtxPaid":catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice,"metadata":{},"gameContext":""})
+                            profile.stats.attributes.mtx_purchase_history.purchases.push({ "purchaseId": purchaseId, "offerId": `v2:/${purchaseId}`, "purchaseDate": new Date().toISOString(), "freeRefundEligible": false, "fulfillments": [], "lootResult": Notifications[0].lootResult.items, "totalMtxPaid": catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice, "metadata": {}, "gameContext": "" })
 
                             ApplyProfileChanges.push({
                                 "changeType": "statModified",
@@ -7256,9 +7249,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
             }
 
             if (value.name.startsWith("STW")) {
-                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                catalog.storefronts[a].catalogEntries.forEach(function (value, b) {
                     if (value.offerId == req.body.offerId) {
-                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function (value, c) {
                             const ID = functions.MakeID();
 
                             if (MultiUpdate.length == 0) {
@@ -7281,7 +7274,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 })
                             }
 
-                            var Item = {"templateId": value.templateId, "attributes": {"legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false}, "quantity": req.body.purchaseQuantity * value.quantity || 1};
+                            var Item = { "templateId": value.templateId, "attributes": { "legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false }, "quantity": req.body.purchaseQuantity * value.quantity || 1 };
 
                             if (Item.templateId.toLowerCase().startsWith("worker:")) {
                                 Item.attributes = functions.MakeSurvivorAttributes(Item.templateId);
@@ -7302,18 +7295,18 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 "quantity": req.body.purchaseQuantity * value.quantity || 1
                             })
                         })
-                        // STW currency spending
+
                         if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "gameitem") {
                             for (var key in campaign.items) {
                                 if (campaign.items[key].templateId.toLowerCase() == catalog.storefronts[a].catalogEntries[b].prices[0].currencySubType.toLowerCase()) {
                                     campaign.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * req.body.purchaseQuantity || 1;
-                                            
+
                                     MultiUpdate[0].profileChanges.push({
                                         "changeType": "itemQuantityChanged",
                                         "itemId": key,
                                         "quantity": campaign.items[key].quantity
                                     })
-                    
+
                                     break;
                                 }
                             }
@@ -7353,7 +7346,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
         }
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7375,11 +7368,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     res.end();
 });
 
-// Set auto claim for a season pass
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetSeasonPassAutoClaim", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7390,7 +7383,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetSeasonPassAutoClaim", as
             if (!profile.stats.attributes.hasOwnProperty("auto_spend_season_currency_ids")) {
                 profile.stats.attributes.auto_spend_season_currency_ids = [];
             }
-    
+
             if (req.body.bEnabled === true) {
                 if (!profile.stats.attributes.auto_spend_season_currency_ids.includes(seasonId)) {
                     profile.stats.attributes.auto_spend_season_currency_ids.push(seasonId);
@@ -7404,7 +7397,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetSeasonPassAutoClaim", as
                 }
             }
         }
-    }    
+    }
 
     if (StatChanged == true) {
         ApplyProfileChanges.push({
@@ -7419,7 +7412,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetSeasonPassAutoClaim", as
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7439,11 +7432,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetSeasonPassAutoClaim", as
     res.end();
 });
 
-// Archive locker items
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetItemArchivedStatusBatch", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7470,7 +7463,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemArchivedStatusBatch"
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7490,11 +7483,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemArchivedStatusBatch"
     res.end();
 });
 
-// Set multiple items favorite
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7521,7 +7514,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch"
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7541,11 +7534,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch"
     res.end();
 });
 
-// Set favorite on item
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatus", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7570,7 +7563,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatus", asy
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7590,11 +7583,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatus", asy
     res.end();
 });
 
-// Mark item as seen
+
 express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7621,7 +7614,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7641,20 +7634,20 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
     res.end();
 });
 
-// Equip BR Locker 1
+
 express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomization", async (req, res) => {
     const profile = require("./../profiles/athena.json");
 
     try {
         if (!profile.stats.attributes.favorite_dance) {
-            profile.stats.attributes.favorite_dance = ["","","","","",""];
+            profile.stats.attributes.favorite_dance = ["", "", "", "", "", ""];
         }
         if (!profile.stats.attributes.favorite_itemwraps) {
-            profile.stats.attributes.favorite_itemwraps = ["","","","","","",""];
+            profile.stats.attributes.favorite_itemwraps = ["", "", "", "", "", "", ""];
         }
-    } catch (err) {}
+    } catch (err) { }
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7668,18 +7661,18 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
             if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
                 profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
             }
-			
+
             for (var i in profile.items[req.body.itemToSlot].attributes.variants) {
                 try {
                     if (profile.items[req.body.itemToSlot].attributes.variants[i].channel.toLowerCase() == req.body.variantUpdates[i].channel.toLowerCase()) {
                         profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
                     }
-                } catch (err) {}
+                } catch (err) { }
             }
-			
+
             VariantChanged = true;
         }
-    } catch (err) {}
+    } catch (err) { }
 
     if (req.body.slotName) {
 
@@ -7757,7 +7750,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
         fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7777,11 +7770,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
     res.end();
 });
 
-// Set BR Banner 1
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", async (req, res) => {
     const profile = require("./../profiles/athena.json");
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7812,7 +7805,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", asy
         fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7832,11 +7825,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", asy
     res.end();
 });
 
-// Set BR Banner 2
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerBanner", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7869,7 +7862,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerBanner", a
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -7889,11 +7882,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerBanner", a
     res.end();
 });
 
-// Set BR Locker 2
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -7945,7 +7938,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
                 profile.items[req.body.lockerItem].attributes.locker_slots_data.slots[req.body.category].activeVariants = new_variants;
             }
         }
-    } catch (err) {}
+    } catch (err) { }
 
     if (req.body.category && req.body.lockerItem) {
 
@@ -8013,7 +8006,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -8033,11 +8026,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
     res.end();
 });
 
-// Set BR Locker 3
+
 express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -8099,10 +8092,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout",
         })
 
         StatChanged = true;
-        
-    } catch (err) {}
 
-    // Apply the edit style changes to the item attributes too
+    } catch (err) { }
+
+
     for (var slot in loadoutData.slots) {
         if (loadoutData.slots[slot].hasOwnProperty("customization_info")) {
             for (var item in profile.items) {
@@ -8132,7 +8125,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout",
                         "attributeName": "variants",
                         "attributeValue": profile.items[item].attributes.variants
                     })
-            
+
                     StatChanged = true;
                 }
             }
@@ -8146,7 +8139,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout",
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -8166,7 +8159,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout",
     res.end();
 });
 
-// Get BR Locker 4
+
 express.get("/api/locker/v3/:deploymentId/account/:accountId/items", async (req, res) => {
     const profile = require("./../profiles/athena.json");
     var StatChanged = false;
@@ -8233,7 +8226,7 @@ express.get("/api/locker/v3/:deploymentId/account/:accountId/items", async (req,
     res.end();
 });
 
-// Set BR Locker 4
+
 express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountId/active-loadout", async (req, res) => {
     const profile = require("./../profiles/athena.json");
     var StatChanged = false;
@@ -8250,7 +8243,7 @@ express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountI
         "loadoutSlots": req.body.loadoutSlots
     }
 
-    // Format the body data to Locker V3
+
     var loadoutData = {
         "slots": []
     }
@@ -8273,7 +8266,7 @@ express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountI
                 customizationToAdd.additional_data = customization.additionalData;
             if (!slotToAdd.hasOwnProperty("customization_info"))
                 slotToAdd.customization_info = [];
-            
+
             slotToAdd.customization_info.push(customizationToAdd)
         }
         loadoutData.slots.push(slotToAdd)
@@ -8308,10 +8301,10 @@ express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountI
         profile.items[LoadoutGUID].attributes = loadoutData;
 
         StatChanged = true;
-        
-    } catch (err) {}
 
-    // Apply the edit style changes to the item attributes too
+    } catch (err) { }
+
+
     for (var slot in loadoutData.slots) {
         if (loadoutData.slots[slot].hasOwnProperty("customization_info")) {
             for (var item in profile.items) {
@@ -8334,7 +8327,7 @@ express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountI
                             })
                         }
                     }
-            
+
                     StatChanged = true;
                 }
             }
@@ -8352,7 +8345,7 @@ express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountI
     res.end();
 });
 
-// Get BR Locker 5
+
 express.get("/api/locker/v4/:deploymentId/account/:accountId/items", async (req, res) => {
     const profile = require("./../profiles/athena.json");
     var StatChanged = false;
@@ -8433,7 +8426,7 @@ express.get("/api/locker/v4/:deploymentId/account/:accountId/items", async (req,
     res.end();
 });
 
-// Set BR Locker 5
+
 express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-group", async (req, res) => {
     const profile = require("./../profiles/athena.json");
     var StatChanged = false;
@@ -8456,7 +8449,7 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
     }
 
     for (var loadoutType in req.body.loadouts) {
-        // Format the body data to Locker V3
+
         var loadoutData = {
             "slots": []
         }
@@ -8467,7 +8460,7 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
                 slotToAdd.slot_template = slot.slotTemplate;
             if (slot.equippedItemId)
                 slotToAdd.equipped_item = slot.equippedItemId;
-    
+
             for (var customization in slot.itemCustomizations) {
                 customization = slot.itemCustomizations[customization];
                 var customizationToAdd = {}
@@ -8479,39 +8472,39 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
                     customizationToAdd.additional_data = customization.additionalData;
                 if (!slotToAdd.hasOwnProperty("customization_info"))
                     slotToAdd.customization_info = [];
-                
+
                 slotToAdd.customization_info.push(customizationToAdd)
             }
             loadoutData.slots.push(slotToAdd)
         }
-    
+
         if (!profile.stats.attributes.loadout_presets.hasOwnProperty(loadoutType)) {
             const NewLoadoutID = functions.MakeID();
-    
+
             profile.items[NewLoadoutID] = {
                 "templateId": loadoutType,
                 "attributes": {},
                 "quantity": 1
             }
-    
+
             profile.stats.attributes.loadout_presets[loadoutType] = {
                 "0": NewLoadoutID
             };
-    
+
             StatChanged = true;
         }
-    
+
         var LoadoutGUID = [];
-    
+
         try {
             LoadoutGUID = profile.stats.attributes.loadout_presets[loadoutType]["0"];
             profile.items[LoadoutGUID].attributes = loadoutData;
-    
+
             StatChanged = true;
-            
-        } catch (err) {}
-    
-        // Apply the edit style changes to the item attributes too
+
+        } catch (err) { }
+
+
         for (var slot in loadoutData.slots) {
             if (loadoutData.slots[slot].hasOwnProperty("customization_info")) {
                 for (var item in profile.items) {
@@ -8521,7 +8514,7 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
                             for (var profileCustomization in profile.items[item].attributes.variants) {
                                 if (loadoutData.slots[slot].customization_info[customization].channel_tag == profile.items[item].attributes.variants[profileCustomization].channel) {
                                     profile.items[item].attributes.variants[profileCustomization].active = `${loadoutData.slots[slot].customization_info[customization].variant_tag}.${loadoutData.slots[slot].customization_info[customization].additional_data}`;
-    
+
                                     bFound = true;
                                     break;
                                 }
@@ -8534,7 +8527,7 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
                                 })
                             }
                         }
-                
+
                         StatChanged = true;
                     }
                 }
@@ -8553,11 +8546,11 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
     res.end();
 });
 
-// Set Active Archetype (e.g. main vehicle in v30.00+)
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetActiveArchetype", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -8586,7 +8579,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveArchetype", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -8606,11 +8599,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveArchetype", async 
     res.end();
 });
 
-// Set hero variants STW
+
 express.post("/fortnite/api/game/v2/profile/*/client/SetHeroCosmeticVariants", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
@@ -8643,7 +8636,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHeroCosmeticVariants", a
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -8663,16 +8656,172 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHeroCosmeticVariants", a
     res.end();
 });
 
-// any dedicated_server request
+
+function ParseCollectionProperties(properties) {
+    if (!properties) return {};
+    if (typeof properties == "string") {
+        try { return JSON.parse(properties); } catch { return {}; }
+    }
+    if (typeof properties.jsonString == "string") return ParseCollectionProperties(properties.jsonString);
+    if (typeof properties.JsonString == "string") return ParseCollectionProperties(properties.JsonString);
+    return properties;
+}
+
+function AddToCollectionsProfile(profile, entry, ApplyProfileChanges) {
+    const templateId = String(entry.category || entry.Category || "");
+    const variantTag = String(entry.variant || entry.Variant || "");
+    if (!templateId || !variantTag) return false;
+
+    const properties = ParseCollectionProperties(entry.properties || entry.Properties);
+    const contextTags = entry.contextTags || entry.ContextTags || [];
+    const count = Number(entry.count || entry.Count || 1);
+
+    let itemId = Object.keys(profile.items).find(id => profile.items[id].templateId.toLowerCase() == templateId.toLowerCase());
+    let bNewItem = false;
+
+    if (!itemId) {
+        itemId = functions.MakeID();
+        profile.items[itemId] = {
+            "templateId": templateId,
+            "attributes": { "collected": [] },
+            "quantity": 1
+        };
+        bNewItem = true;
+    }
+
+    const item = profile.items[itemId];
+    if (!Array.isArray(item.attributes.collected)) item.attributes.collected = [];
+
+    const existing = item.attributes.collected.find(c => c.variantTag.toLowerCase() == variantTag.toLowerCase());
+
+    if (existing) {
+        existing.count = (existing.count || 1) + count;
+
+        if (!Array.isArray(existing.contextTags)) existing.contextTags = [];
+        for (const tag of contextTags) {
+            if (!existing.contextTags.some(t => t.toLowerCase() == String(tag).toLowerCase())) existing.contextTags.push(tag);
+        }
+
+        if (properties.Weight !== undefined && (existing.properties.Weight || 0) < properties.Weight) existing.properties.Weight = properties.Weight;
+        if (properties.Length !== undefined && (existing.properties.Length || 0) < properties.Length) existing.properties.Length = properties.Length;
+    } else {
+        item.attributes.collected.push({
+            "variantTag": variantTag,
+            "contextTags": contextTags,
+            "properties": properties,
+            "seenState": "NewlyCollected",
+            "count": count
+        });
+    }
+
+    ApplyProfileChanges.push(bNewItem ? {
+        "changeType": "itemAdded",
+        "itemId": itemId,
+        "item": item
+    } : {
+        "changeType": "itemAttrChanged",
+        "itemId": itemId,
+        "attributeName": "collected",
+        "attributeValue": item.attributes.collected
+    });
+
+    return true;
+}
+
+function SendCollectionsResponse(req, res, profile, ApplyProfileChanges, BaseRevision) {
+    const QueryRevision = req.query.rvn || -1;
+
+    if (ApplyProfileChanges.length > 0) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync("./profiles/collections.json", JSON.stringify(profile, null, 2));
+    }
+
+
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": "collections",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+}
+
+express.post("/fortnite/api/game/v2/profile/*/dedicated_server/AddToCollection", async (req, res) => {
+    const profile = require("./../profiles/collections.json");
+
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+
+    AddToCollectionsProfile(profile, req.body, ApplyProfileChanges);
+
+    SendCollectionsResponse(req, res, profile, ApplyProfileChanges, BaseRevision);
+});
+
+express.post("/fortnite/api/game/v2/profile/*/dedicated_server/BulkUpdateCollections", async (req, res) => {
+    const profile = require("./../profiles/collections.json");
+
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+
+    for (const entry of (req.body.items || req.body.Items || [])) {
+        AddToCollectionsProfile(profile, entry, ApplyProfileChanges);
+    }
+
+    SendCollectionsResponse(req, res, profile, ApplyProfileChanges, BaseRevision);
+});
+
+express.post("/fortnite/api/game/v2/profile/*/client/MarkCollectedItemsSeen", async (req, res) => {
+    const profile = require("./../profiles/collections.json");
+
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+
+    for (const seen of (req.body.variants || req.body.Variants || [])) {
+        const variantTag = String(seen.variant || seen.Variant || "").toLowerCase();
+
+        for (const itemId in profile.items) {
+            const collected = profile.items[itemId].attributes.collected;
+            if (!Array.isArray(collected)) continue;
+
+            const entry = collected.find(c => c.variantTag.toLowerCase() == variantTag);
+            if (!entry || entry.seenState == "Collected") continue;
+
+            entry.seenState = "Collected";
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": itemId,
+                "attributeName": "collected",
+                "attributeValue": collected
+            });
+        }
+    }
+
+    SendCollectionsResponse(req, res, profile, ApplyProfileChanges, BaseRevision);
+});
+
+
 express.post("/fortnite/api/game/v2/profile/*/dedicated_server/*", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
@@ -8692,16 +8841,16 @@ express.post("/fortnite/api/game/v2/profile/*/dedicated_server/*", async (req, r
     res.end();
 });
 
-// any mcp request that doesn't have something assigned to it
+
 express.post("/fortnite/api/game/v2/profile/*/client/*", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
 
-    // do not change any of these or you will end up breaking it
+
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
 
-    // this doesn't work properly on version v12.20 and above but whatever
+
     if (QueryRevision != BaseRevision) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",

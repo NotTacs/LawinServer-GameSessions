@@ -98,6 +98,42 @@
       "note": "",
       "favorite": false,
       "created": "2026-10-12T02:25:53.340Z"
+    },
+    {
+      "accountId": "sama",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2026-11-06T22:16:18.385Z"
+    },
+    {
+      "accountId": "hostgmailcom",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2026-11-06T22:17:47.405Z"
+    },
+    {
+      "accountId": "diddy",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2026-11-07T04:48:10.576Z"
+    },
+    {
+      "accountId": "cumware",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2026-11-07T04:49:44.302Z"
     }
   ],
   "incoming": [],

@@ -140632,6 +140632,7 @@
         "challenge_bundle_schedule_id": "QS19-Season19_Milestone_Schedule",
         "grantedquestinstanceids": [
           "QS19-Quest_S19_Milestone_Eliminations_Q01",
+          "QS19-Quest_S19_dailyquest_ElimShotgun",
           "QS19-Quest_S19_Milestone_Eliminations_Q02",
           "QS19-Quest_S19_Milestone_Eliminations_Q03",
           "QS19-Quest_S19_Milestone_Eliminations_Q04",
@@ -143193,6 +143194,17 @@
           "templateId": "GiftBox:gb_challengecompletelightweight",
           "giftBoxFormatData": {}
         }
+      },
+      "QS19-Quest_S19_dailyquest_ElimShotgun": {
+        "templateId": "Quest:quest_s19_dailyquest_elimshotgun",
+        "challenge_bundle_id": "QS19-QuestBundle_S19_Milestone_Eliminations",
+        "objectives": {
+          "quest_s19_dailyquest_elimshotgun_obj0": 3
+        },
+        "objectiveCompletionCount": -1,
+        "rewards": [],
+        "hiddenRewards": [],
+        "giftBoxToUse": {}
       },
       "QS19-Quest_S19_Milestone_Eliminations_Q01": {
         "templateId": "Quest:quest_s19_milestone_eliminations_q01",

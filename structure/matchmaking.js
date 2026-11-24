@@ -48,7 +48,6 @@ express.get("/fortnite/api/game/v2/matchmakingservice/ticket/player/:accountId",
     res.end();
 });
 
-// Encryption key exchange for session - must reliably return the key for both client & server
 express.get(
   "/fortnite/api/game/v2/matchmaking/account/:accountId/session/:sessionId",
   async (req, res) => {
@@ -60,7 +59,6 @@ express.get(
   },
 );
 
-// 1. Literal / Specific POST routes MUST come before /:session_id
 express.post(
     "/fortnite/api/matchmaking/session/matchMakingRequest",
     async (req, res) => {
@@ -69,7 +67,6 @@ express.post(
             return res.status(200).json([]);
         }
 
-        // Return array of sessions
         return res.status(200).json(gamesessions);
     },
 );
@@ -79,11 +76,9 @@ express.post("/fortnite/api/matchmaking/session/*/join", async (req, res) => {
     res.end();
 });
 
-// Dedicated server registers / updates session
 express.post("/fortnite/api/matchmaking/session", async (req, res) => {
     const body = req.body;
-    // CRITICAL: Preserve session ID across dedicated server restarts/map reloads
-    // so the client's reserved session ID matches the server's session ID!
+
     const id = body.id || body.sessionId || (gamesessions.length > 0 ? gamesessions[0].id : currentSessionId);
     currentSessionId = id;
 
@@ -175,7 +170,6 @@ express.put(
   },
 );
 
-// Destroy session endpoint (called when server restarts/shuts down)
 express.delete(
   "/fortnite/api/matchmaking/session/:sessionId",
   async (req, res) => {
@@ -220,7 +214,6 @@ express.post(
   },
 );
 
-// Parameterized POST fallback for /:session_id
 express.post("/fortnite/api/matchmaking/session/:session_id", async (req, res) => {
     const body = req.body;
     currentSessionId = req.params.session_id;
@@ -265,7 +258,6 @@ express.post("/fortnite/api/matchmaking/session/:session_id", async (req, res) =
     return res.json(session);
 });
 
-// GET session by ID
 express.get("/fortnite/api/matchmaking/session/:session_id", async (req, res) => {
     const existing = gamesessions.find((x) => x.id === req.params.session_id);
     if (existing) {
@@ -316,16 +308,21 @@ express.get("/fortnite/api/matchmaking/session/:session_id", async (req, res) =>
 });
 
 express.post("/fortnite/api/game/v2/world/validate", async (req, res) => {
-  const { theaterId, theaterMissionId, zoneThemeClass, worldId } = req.body;
+
+  const body = {};
+  for (const [key, value] of Object.entries(req.body || {}))
+    body[key.toLowerCase()] = value;
+
+  const theaterId = body.theaterid;
+  const theaterMissionId = body.theatermissionid;
+  const zoneThemeClass = body.zonethemeclass;
 
   if (!theaterId || !theaterMissionId || !zoneThemeClass)
     return res.status(400).end();
 
-  if (typeof worldInfo === "undefined" || !worldInfo.missions) {
-    return res.status(404).end();
-  }
+  const worldInfo = functions.getTheater(req);
 
-  const theater = worldInfo.missions.find(
+  const theater = (worldInfo.missions || []).find(
     (theater) => theater.theaterId === theaterId,
   );
   if (!theater) return res.status(404).end();
@@ -335,16 +332,22 @@ express.post("/fortnite/api/game/v2/world/validate", async (req, res) => {
   );
   if (!mission) return res.status(404).end();
 
+  const emptyLoot = () => ({ tierGroupName: "", items: [] });
+
   const missionData = {
-    worldId,
+    worldId: body.worldid || "",
     theaterId,
     theaterMissionId,
+    theaterMissionAlertId: body.theatermissionalertid || "",
     zoneThemeClass,
-    missionRewards: mission.missionRewards,
     missionGenerator: mission.missionGenerator,
     zoneDifficultyInfo: mission.missionDifficultyInfo,
+    missionRewards: mission.missionRewards || emptyLoot(),
+    difficultyIncreaseMissionRewards: [],
+    missionAlertRewards: emptyLoot(),
+    zoneModifiers: emptyLoot(),
+    missionAlertCategoryName: "",
     tileIndex: mission.tileIndex,
-    zoneModifiers: [],
   };
 
   res.json(missionData);

@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "last-reset": "2026-11-14T00:38:35.621Z",
+    "server-version": "19.10",
+    "build-version": "++Fortnite+Release-19.10-CL-18675304",
+    "serialized-at": "2026-11-14T00:40:05.700Z",
+    "num-actors-base": "7",
+    "num-actors-new": "6",
+    "num-actors-delete": "0",
+    "used-budget": "0",
+    "total-budget": "200000000"
+  },
+  "checkoutGuid": "DF8A10A948EA2DB76CB98EB892588002",
+  "md5": "ce94f713973c09730599f3797efe9003",
+  "size": 4381,
+  "updated": "2026-11-14T00:40:05.735Z"
+}

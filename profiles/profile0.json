@@ -2,7 +2,7 @@
   "_id": "LawinServer",
   "created": "0001-01-01T00:00:00.000Z",
   "updated": "0001-01-01T00:00:00.000Z",
-  "rvn": 11,
+  "rvn": 12,
   "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "profile0",
@@ -7008,7 +7008,16 @@
     "Hero:HID_Commando_XBOX_VR_T05": {
       "templateId": "Hero:HID_Commando_XBOX_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7028,7 +7037,16 @@
     "Hero:HID_Commando_XBOX_SR_T05": {
       "templateId": "Hero:HID_Commando_XBOX_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7048,7 +7066,16 @@
     "Hero:HID_Commando_XBOX_R_T04": {
       "templateId": "Hero:HID_Commando_XBOX_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7068,7 +7095,16 @@
     "Hero:HID_Commando_Sony_VR_T05": {
       "templateId": "Hero:HID_Commando_Sony_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7088,7 +7124,16 @@
     "Hero:HID_Commando_Sony_SR_T05": {
       "templateId": "Hero:HID_Commando_Sony_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7108,7 +7153,16 @@
     "Hero:HID_Commando_Sony_R_T04": {
       "templateId": "Hero:HID_Commando_Sony_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7128,7 +7182,16 @@
     "Hero:HID_Commando_ShockDamage_VR_T05": {
       "templateId": "Hero:HID_Commando_ShockDamage_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7148,7 +7211,16 @@
     "Hero:HID_Commando_ShockDamage_SR_T05": {
       "templateId": "Hero:HID_Commando_ShockDamage_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7168,7 +7240,16 @@
     "Hero:HID_Commando_ShockDamage_R_T04": {
       "templateId": "Hero:HID_Commando_ShockDamage_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7188,7 +7269,16 @@
     "Hero:HID_Commando_GunTough_VR_T05": {
       "templateId": "Hero:HID_Commando_GunTough_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7208,7 +7298,16 @@
     "Hero:HID_Commando_GunTough_UC_T03": {
       "templateId": "Hero:HID_Commando_GunTough_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -7228,7 +7327,16 @@
     "Hero:HID_Commando_GunTough_SR_T05": {
       "templateId": "Hero:HID_Commando_GunTough_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7248,7 +7356,16 @@
     "Hero:HID_Commando_GunTough_R_T04": {
       "templateId": "Hero:HID_Commando_GunTough_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7268,7 +7385,16 @@
     "Hero:HID_Commando_GunHeadshotHW_VR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshotHW_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7288,7 +7414,16 @@
     "Hero:HID_Commando_GunHeadshotHW_SR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshotHW_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7308,7 +7443,16 @@
     "Hero:HID_Commando_GunHeadshot_VR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshot_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "squad_id": " e",
         "level": 50,
@@ -7328,7 +7472,16 @@
     "Hero:HID_Commando_GunHeadshot_SR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshot_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7348,7 +7501,16 @@
     "Hero:HID_Commando_GrenadeMaster_SR_T05": {
       "templateId": "Hero:HID_Commando_GrenadeMaster_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7368,7 +7530,16 @@
     "Hero:HID_Commando_GrenadeGun_VR_T05": {
       "templateId": "Hero:HID_Commando_GrenadeGun_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7388,7 +7559,16 @@
     "Hero:HID_Commando_GrenadeGun_SR_T05": {
       "templateId": "Hero:HID_Commando_GrenadeGun_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7408,7 +7588,16 @@
     "Hero:HID_Commando_GrenadeGun_UC_T03": {
       "templateId": "Hero:HID_Commando_GrenadeGun_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -7428,7 +7617,16 @@
     "Hero:HID_Commando_GrenadeGun_R_T04": {
       "templateId": "Hero:HID_Commando_GrenadeGun_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7448,7 +7646,16 @@
     "Hero:HID_Commando_GCGrenade_VR_T05": {
       "templateId": "Hero:HID_Commando_GCGrenade_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7468,7 +7675,16 @@
     "Hero:HID_Commando_GCGrenade_SR_T05": {
       "templateId": "Hero:HID_Commando_GCGrenade_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7488,7 +7704,16 @@
     "Hero:HID_Commando_GCGrenade_R_T04": {
       "templateId": "Hero:HID_Commando_GCGrenade_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7508,7 +7733,16 @@
     "Hero:HID_Commando_013_VR_T05": {
       "templateId": "Hero:HID_Commando_013_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7528,7 +7762,16 @@
     "Hero:HID_Commando_013_SR_T05": {
       "templateId": "Hero:HID_Commando_013_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7548,7 +7791,16 @@
     "Hero:HID_Commando_013_R_T04": {
       "templateId": "Hero:HID_Commando_013_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7568,7 +7820,16 @@
     "Hero:HID_Commando_012_SR_T05": {
       "templateId": "Hero:HID_Commando_012_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7588,7 +7849,16 @@
     "Hero:HID_Commando_011_VR_T05": {
       "templateId": "Hero:HID_Commando_011_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7608,7 +7878,16 @@
     "Hero:HID_Commando_011_UC_T03": {
       "templateId": "Hero:HID_Commando_011_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -7628,7 +7907,16 @@
     "Hero:HID_Commando_011_SR_T05": {
       "templateId": "Hero:HID_Commando_011_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7648,7 +7936,16 @@
     "Hero:HID_Commando_011_R_T04": {
       "templateId": "Hero:HID_Commando_011_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7668,7 +7965,16 @@
     "Hero:HID_Commando_011_M_SR_T05": {
       "templateId": "Hero:HID_Commando_011_M_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7688,7 +7994,16 @@
     "Hero:HID_Commando_010_VR_T05": {
       "templateId": "Hero:HID_Commando_010_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7708,7 +8023,16 @@
     "Hero:HID_Commando_010_SR_T05": {
       "templateId": "Hero:HID_Commando_010_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7728,7 +8052,16 @@
     "Hero:HID_Commando_009_VR_T05": {
       "templateId": "Hero:HID_Commando_009_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7748,7 +8081,16 @@
     "Hero:HID_Commando_009_SR_T05": {
       "templateId": "Hero:HID_Commando_009_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7768,7 +8110,16 @@
     "Hero:HID_Commando_009_R_T04": {
       "templateId": "Hero:HID_Commando_009_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7788,7 +8139,16 @@
     "Hero:HID_Commando_009_M_VR_T05": {
       "templateId": "Hero:HID_Commando_009_M_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7808,7 +8168,16 @@
     "Hero:HID_Commando_009_M_SR_T05": {
       "templateId": "Hero:HID_Commando_009_M_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7828,7 +8197,16 @@
     "Hero:HID_Commando_009_M_R_T04": {
       "templateId": "Hero:HID_Commando_009_M_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7848,7 +8226,16 @@
     "Hero:HID_Commando_008_VR_T05": {
       "templateId": "Hero:HID_Commando_008_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7868,7 +8255,16 @@
     "Hero:HID_Commando_008_SR_T05": {
       "templateId": "Hero:HID_Commando_008_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7888,7 +8284,16 @@
     "Hero:HID_Commando_008_R_T04": {
       "templateId": "Hero:HID_Commando_008_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -7908,7 +8313,16 @@
     "Hero:HID_Commando_008_FoundersF_SR_T05": {
       "templateId": "Hero:HID_Commando_008_FoundersF_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7928,7 +8342,16 @@
     "Hero:HID_Commando_008_FoundersM_SR_T05": {
       "templateId": "Hero:HID_Commando_008_FoundersM_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7948,7 +8371,16 @@
     "Hero:HID_Commando_007HW_VR_T05": {
       "templateId": "Hero:HID_Commando_007HW_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7968,7 +8400,16 @@
     "Hero:HID_Commando_007HW_SR_T05": {
       "templateId": "Hero:HID_Commando_007HW_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -7988,7 +8429,16 @@
     "Hero:HID_Commando_007_VR_T05": {
       "templateId": "Hero:HID_Commando_007_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8008,7 +8458,16 @@
     "Hero:HID_Commando_007_UC_T03": {
       "templateId": "Hero:HID_Commando_007_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -8026,7 +8485,16 @@
     "Hero:HID_Commando_007_SR_T05": {
       "templateId": "Hero:HID_Commando_007_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8044,7 +8512,16 @@
     "Hero:HID_Commando_007_R_T04": {
       "templateId": "Hero:HID_Commando_007_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "refund_legacy_item": "r ",
         "gender": 0,
         "level": 40,
@@ -8065,7 +8542,16 @@
     "Hero:HID_Commando_013_StPatricks_F_V1_SR_T05": {
       "templateId": "Hero:HID_Commando_013_StPatricks_F_V1_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8085,7 +8571,16 @@
     "Hero:HID_Commando_013_StPatricks_F_V2_SR_T05": {
       "templateId": "Hero:HID_Commando_013_StPatricks_F_V2_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8105,7 +8600,16 @@
     "Hero:HID_Commando_013_StPatricks_M_SR_T05": {
       "templateId": "Hero:HID_Commando_013_StPatricks_M_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8125,7 +8629,16 @@
     "Hero:HID_Commando_014_M_SR_T05": {
       "templateId": "Hero:HID_Commando_014_M_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8145,7 +8658,16 @@
     "Hero:HID_Commando_014_R_T04": {
       "templateId": "Hero:HID_Commando_014_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -8165,7 +8687,16 @@
     "Hero:HID_Commando_014_SR_T05": {
       "templateId": "Hero:HID_Commando_014_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8185,7 +8716,16 @@
     "Hero:HID_Commando_014_VR_T05": {
       "templateId": "Hero:HID_Commando_014_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8205,7 +8745,16 @@
     "Hero:HID_Commando_014_Wukong_SR_T05": {
       "templateId": "Hero:HID_Commando_014_Wukong_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8225,7 +8774,16 @@
     "Hero:HID_Commando_GCGrenade_T_SR_T05": {
       "templateId": "Hero:HID_Commando_GCGrenade_T_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8245,7 +8803,16 @@
     "Hero:HID_Commando_GCGrenade_T_VR_T05": {
       "templateId": "Hero:HID_Commando_GCGrenade_T_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8265,7 +8832,16 @@
     "Hero:HID_Commando_GrenadeGun_M_T_SR_T05": {
       "templateId": "Hero:HID_Commando_GrenadeGun_M_T_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8285,7 +8861,16 @@
     "Hero:HID_Commando_GunHeadShot_Starter_M_SR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadShot_Starter_M_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8305,7 +8890,16 @@
     "Hero:HID_Commando_GunTough_Valentine_SR_T05": {
       "templateId": "Hero:HID_Commando_GunTough_Valentine_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8325,7 +8919,16 @@
     "Hero:HID_Constructor_XBOX_VR_T05": {
       "templateId": "Hero:HID_Constructor_XBOX_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8345,7 +8948,16 @@
     "Hero:HID_Constructor_XBOX_SR_T05": {
       "templateId": "Hero:HID_Constructor_XBOX_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8365,7 +8977,16 @@
     "Hero:HID_Constructor_XBOX_R_T04": {
       "templateId": "Hero:HID_Constructor_XBOX_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -8385,7 +9006,16 @@
     "Hero:HID_Constructor_Sony_VR_T05": {
       "templateId": "Hero:HID_Constructor_Sony_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8405,7 +9035,16 @@
     "Hero:HID_Constructor_Sony_SR_T05": {
       "templateId": "Hero:HID_Constructor_Sony_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8425,7 +9064,16 @@
     "Hero:HID_Constructor_Sony_R_T04": {
       "templateId": "Hero:HID_Constructor_Sony_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -8445,7 +9093,16 @@
     "Hero:HID_Constructor_RushBASE_VR_T05": {
       "templateId": "Hero:HID_Constructor_RushBASE_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8465,7 +9122,16 @@
     "Hero:HID_Constructor_RushBASE_UC_T03": {
       "templateId": "Hero:HID_Constructor_RushBASE_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -8485,7 +9151,16 @@
     "Hero:HID_Constructor_RushBASE_SR_T05": {
       "templateId": "Hero:HID_Constructor_RushBASE_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8505,7 +9180,16 @@
     "Hero:HID_Constructor_RushBASE_R_T04": {
       "templateId": "Hero:HID_Constructor_RushBASE_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -8525,7 +9209,16 @@
     "Hero:HID_Constructor_RushBASE_F_VR_T05": {
       "templateId": "Hero:HID_Constructor_RushBASE_F_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8545,7 +9238,16 @@
     "Hero:HID_Constructor_RushBASE_F_SR_T05": {
       "templateId": "Hero:HID_Constructor_RushBASE_F_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8565,7 +9267,16 @@
     "Hero:HID_Constructor_PlasmaDamage_VR_T05": {
       "templateId": "Hero:HID_Constructor_PlasmaDamage_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8585,7 +9296,16 @@
     "Hero:HID_Constructor_PlasmaDamage_SR_T05": {
       "templateId": "Hero:HID_Constructor_PlasmaDamage_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8605,7 +9325,16 @@
     "Hero:HID_Constructor_PlasmaDamage_R_T04": {
       "templateId": "Hero:HID_Constructor_PlasmaDamage_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -8625,7 +9354,16 @@
     "Hero:HID_Constructor_HammerTank_VR_T05": {
       "templateId": "Hero:HID_Constructor_HammerTank_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8645,7 +9383,16 @@
     "Hero:HID_Constructor_HammerTank_UC_T03": {
       "templateId": "Hero:HID_Constructor_HammerTank_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -8665,7 +9412,16 @@
     "Hero:HID_Constructor_HammerTank_SR_T05": {
       "templateId": "Hero:HID_Constructor_HammerTank_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8684,7 +9440,16 @@
     "Hero:HID_Constructor_HammerTank_R_T04": {
       "templateId": "Hero:HID_Constructor_HammerTank_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -8704,7 +9469,16 @@
     "Hero:HID_Constructor_HammerPlasma_VR_T05": {
       "templateId": "Hero:HID_Constructor_HammerPlasma_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8722,7 +9496,16 @@
     "Hero:HID_Constructor_HammerPlasma_SR_T05": {
       "templateId": "Hero:HID_Constructor_HammerPlasma_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8739,7 +9522,16 @@
     "Hero:HID_Constructor_BaseHyperHW_VR_T05": {
       "templateId": "Hero:HID_Constructor_BaseHyperHW_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8759,7 +9551,16 @@
     "Hero:HID_Constructor_BaseHyperHW_SR_T05": {
       "templateId": "Hero:HID_Constructor_BaseHyperHW_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8779,7 +9580,16 @@
     "Hero:HID_Constructor_BaseHyper_VR_T05": {
       "templateId": "Hero:HID_Constructor_BaseHyper_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "clipSizeScale": " v",
         "level": 50,
@@ -8800,7 +9610,16 @@
     "Hero:HID_Constructor_BaseHyper_SR_T05": {
       "templateId": "Hero:HID_Constructor_BaseHyper_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8820,7 +9639,16 @@
     "Hero:HID_Constructor_BaseHyper_R_T04": {
       "templateId": "Hero:HID_Constructor_BaseHyper_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -8840,7 +9668,16 @@
     "Hero:HID_Constructor_BASEBig_SR_T05": {
       "templateId": "Hero:HID_Constructor_BASEBig_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8860,7 +9697,16 @@
     "Hero:HID_Constructor_013_VR_T05": {
       "templateId": "Hero:HID_Constructor_013_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8880,7 +9726,16 @@
     "Hero:HID_Constructor_013_UC_T03": {
       "templateId": "Hero:HID_Constructor_013_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -8900,7 +9755,16 @@
     "Hero:HID_Constructor_013_SR_T05": {
       "templateId": "Hero:HID_Constructor_013_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8920,7 +9784,16 @@
     "Hero:HID_Constructor_013_R_T04": {
       "templateId": "Hero:HID_Constructor_013_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -8940,7 +9813,16 @@
     "Hero:HID_Constructor_011_VR_T05": {
       "templateId": "Hero:HID_Constructor_011_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8960,7 +9842,16 @@
     "Hero:HID_Constructor_011_SR_T05": {
       "templateId": "Hero:HID_Constructor_011_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -8980,7 +9871,16 @@
     "Hero:HID_Constructor_011_R_T04": {
       "templateId": "Hero:HID_Constructor_011_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9000,7 +9900,16 @@
     "Hero:HID_Constructor_010_VR_T05": {
       "templateId": "Hero:HID_Constructor_010_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9020,7 +9929,16 @@
     "Hero:HID_Constructor_010_SR_T05": {
       "templateId": "Hero:HID_Constructor_010_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9040,7 +9958,16 @@
     "Hero:HID_Constructor_009_VR_T05": {
       "templateId": "Hero:HID_Constructor_009_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9060,7 +9987,16 @@
     "Hero:HID_Constructor_009_SR_T05": {
       "templateId": "Hero:HID_Constructor_009_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9080,7 +10016,16 @@
     "Hero:HID_Constructor_009_R_T04": {
       "templateId": "Hero:HID_Constructor_009_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9100,7 +10045,16 @@
     "Hero:HID_Constructor_008_VR_T05": {
       "templateId": "Hero:HID_Constructor_008_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9120,7 +10074,16 @@
     "Hero:HID_Constructor_008_SR_T05": {
       "templateId": "Hero:HID_Constructor_008_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9140,7 +10103,16 @@
     "Hero:HID_Constructor_008_R_T04": {
       "templateId": "Hero:HID_Constructor_008_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9160,7 +10132,16 @@
     "Hero:HID_Constructor_008_FoundersM_SR_T05": {
       "templateId": "Hero:HID_Constructor_008_FoundersM_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9180,7 +10161,16 @@
     "Hero:HID_Constructor_008_FoundersF_SR_T05": {
       "templateId": "Hero:HID_Constructor_008_FoundersF_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9200,7 +10190,16 @@
     "Hero:HID_Constructor_007HW_VR_T05": {
       "templateId": "Hero:HID_Constructor_007HW_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9220,7 +10219,16 @@
     "Hero:HID_Constructor_007HW_SR_T05": {
       "templateId": "Hero:HID_Constructor_007HW_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9240,7 +10248,16 @@
     "Hero:HID_Constructor_007_VR_T05": {
       "templateId": "Hero:HID_Constructor_007_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9260,7 +10277,16 @@
     "Hero:HID_Constructor_007_UC_T03": {
       "templateId": "Hero:HID_Constructor_007_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -9280,7 +10306,16 @@
     "Hero:HID_Constructor_007_SR_T05": {
       "templateId": "Hero:HID_Constructor_007_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9300,7 +10335,16 @@
     "Hero:HID_Constructor_007_R_T04": {
       "templateId": "Hero:HID_Constructor_007_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9320,7 +10364,16 @@
     "Hero:HID_Constructor_014_F_SR_T05": {
       "templateId": "Hero:HID_Constructor_014_F_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9340,7 +10393,16 @@
     "Hero:HID_Constructor_014_R_T04": {
       "templateId": "Hero:HID_Constructor_014_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9360,7 +10422,16 @@
     "Hero:HID_Constructor_014_SR_T05": {
       "templateId": "Hero:HID_Constructor_014_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9380,7 +10451,16 @@
     "Hero:HID_Constructor_014_VR_T05": {
       "templateId": "Hero:HID_Constructor_014_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9399,7 +10479,16 @@
     "Hero:HID_Constructor_PlasmaDamage_Easter_SR_T05": {
       "templateId": "Hero:HID_Constructor_PlasmaDamage_Easter_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9418,7 +10507,16 @@
     "Hero:HID_Ninja_XBOX_VR_T05": {
       "templateId": "Hero:HID_Ninja_XBOX_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9436,7 +10534,16 @@
     "Hero:HID_Ninja_XBOX_SR_T05": {
       "templateId": "Hero:HID_Ninja_XBOX_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9456,7 +10563,16 @@
     "Hero:HID_Ninja_XBOX_R_T04": {
       "templateId": "Hero:HID_Ninja_XBOX_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9473,7 +10589,16 @@
     "Hero:HID_Ninja_Swordmaster_SR_T05": {
       "templateId": "Hero:HID_Ninja_Swordmaster_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9493,7 +10618,16 @@
     "Hero:HID_Ninja_StarsRainHW_VR_T05": {
       "templateId": "Hero:HID_Ninja_StarsRainHW_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9513,7 +10647,16 @@
     "Hero:HID_Ninja_StarsRainHW_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsRainHW_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "instance_id": "e ",
@@ -9534,7 +10677,16 @@
     "Hero:HID_Ninja_StarsRain_VR_T05": {
       "templateId": "Hero:HID_Ninja_StarsRain_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9554,7 +10706,16 @@
     "Hero:HID_Ninja_StarsRain_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsRain_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9574,7 +10735,16 @@
     "Hero:HID_Ninja_StarsAssassin_VR_T05": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9594,7 +10764,16 @@
     "Hero:HID_Ninja_StarsAssassin_UC_T03": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -9614,7 +10793,16 @@
     "Hero:HID_Ninja_StarsAssassin_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9634,7 +10822,16 @@
     "Hero:HID_Ninja_StarsAssassin_R_T04": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9654,7 +10851,16 @@
     "Hero:HID_Ninja_StarsAssassin_FoundersM_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_FoundersM_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9674,7 +10880,16 @@
     "Hero:HID_Ninja_StarsAssassin_FoundersF_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_FoundersF_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9694,7 +10909,16 @@
     "Hero:HID_Ninja_Sony_VR_T05": {
       "templateId": "Hero:HID_Ninja_Sony_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9714,7 +10938,16 @@
     "Hero:HID_Ninja_Sony_SR_T05": {
       "templateId": "Hero:HID_Ninja_Sony_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9734,7 +10967,16 @@
     "Hero:HID_Ninja_Sony_R_T04": {
       "templateId": "Hero:HID_Ninja_Sony_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9754,7 +10996,16 @@
     "Hero:HID_Ninja_SmokeDimMak_VR_T05": {
       "templateId": "Hero:HID_Ninja_SmokeDimMak_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9774,7 +11025,16 @@
     "Hero:HID_Ninja_SmokeDimMak_SR_T05": {
       "templateId": "Hero:HID_Ninja_SmokeDimMak_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9794,7 +11054,16 @@
     "Hero:HID_Ninja_SmokeDimMak_R_T04": {
       "templateId": "Hero:HID_Ninja_SmokeDimMak_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9814,7 +11083,16 @@
     "Hero:HID_Ninja_SlashTail_VR_T05": {
       "templateId": "Hero:HID_Ninja_SlashTail_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9834,7 +11112,16 @@
     "Hero:HID_Ninja_SlashTail_UC_T03": {
       "templateId": "Hero:HID_Ninja_SlashTail_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -9854,7 +11141,16 @@
     "Hero:HID_Ninja_SlashTail_SR_T05": {
       "templateId": "Hero:HID_Ninja_SlashTail_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9874,7 +11170,16 @@
     "Hero:HID_Ninja_SlashTail_R_T04": {
       "templateId": "Hero:HID_Ninja_SlashTail_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9894,7 +11199,16 @@
     "Hero:HID_Ninja_SlashBreathHW_VR_T05": {
       "templateId": "Hero:HID_Ninja_SlashBreathHW_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9914,7 +11228,16 @@
     "Hero:HID_Ninja_SlashBreathHW_SR_T05": {
       "templateId": "Hero:HID_Ninja_SlashBreathHW_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9934,7 +11257,16 @@
     "Hero:HID_Ninja_SlashBreath_VR_T05": {
       "templateId": "Hero:HID_Ninja_SlashBreath_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9954,7 +11286,16 @@
     "Hero:HID_Ninja_SlashBreath_SR_T05": {
       "templateId": "Hero:HID_Ninja_SlashBreath_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -9974,7 +11315,16 @@
     "Hero:HID_Ninja_SlashBreath_R_T04": {
       "templateId": "Hero:HID_Ninja_SlashBreath_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9994,7 +11344,16 @@
     "Hero:HID_Ninja_013_VR_T05": {
       "templateId": "Hero:HID_Ninja_013_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10014,7 +11373,16 @@
     "Hero:HID_Ninja_013_SR_T05": {
       "templateId": "Hero:HID_Ninja_013_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10034,7 +11402,16 @@
     "Hero:HID_Ninja_013_R_T04": {
       "templateId": "Hero:HID_Ninja_013_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10054,7 +11431,16 @@
     "Hero:HID_Ninja_011_VR_T05": {
       "templateId": "Hero:HID_Ninja_011_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10073,7 +11459,16 @@
     "Hero:HID_Ninja_011_SR_T05": {
       "templateId": "Hero:HID_Ninja_011_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10093,7 +11488,16 @@
     "Hero:HID_Ninja_011_R_T04": {
       "templateId": "Hero:HID_Ninja_011_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10113,7 +11517,16 @@
     "Hero:HID_Ninja_010_VR_T05": {
       "templateId": "Hero:HID_Ninja_010_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10133,7 +11546,16 @@
     "Hero:HID_Ninja_010_SR_T05": {
       "templateId": "Hero:HID_Ninja_010_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10153,7 +11575,16 @@
     "Hero:HID_Ninja_010_F_VR_T05": {
       "templateId": "Hero:HID_Ninja_010_F_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10173,7 +11604,16 @@
     "Hero:HID_Ninja_010_F_SR_T05": {
       "templateId": "Hero:HID_Ninja_010_F_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10193,7 +11633,16 @@
     "Hero:HID_Ninja_009_VR_T05": {
       "templateId": "Hero:HID_Ninja_009_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10210,7 +11659,16 @@
     "Hero:HID_Ninja_009_SR_T05": {
       "templateId": "Hero:HID_Ninja_009_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10230,7 +11688,16 @@
     "Hero:HID_Ninja_009_R_T04": {
       "templateId": "Hero:HID_Ninja_009_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10248,7 +11715,16 @@
     "Hero:HID_Ninja_008_VR_T05": {
       "templateId": "Hero:HID_Ninja_008_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10269,7 +11745,16 @@
     "Hero:HID_Ninja_008_SR_T05": {
       "templateId": "Hero:HID_Ninja_008_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10289,7 +11774,16 @@
     "Hero:HID_Ninja_008_R_T04": {
       "templateId": "Hero:HID_Ninja_008_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10309,7 +11803,16 @@
     "Hero:HID_Ninja_007_VR_T05": {
       "templateId": "Hero:HID_Ninja_007_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10329,7 +11832,16 @@
     "Hero:HID_Ninja_007_UC_T03": {
       "templateId": "Hero:HID_Ninja_007_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -10349,7 +11861,16 @@
     "Hero:HID_Ninja_007_SR_T05": {
       "templateId": "Hero:HID_Ninja_007_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10369,7 +11890,16 @@
     "Hero:HID_Ninja_007_R_T04": {
       "templateId": "Hero:HID_Ninja_007_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10389,7 +11919,16 @@
     "Hero:HID_Ninja_009_F_Valentine_SR_T05": {
       "templateId": "Hero:HID_Ninja_009_F_Valentine_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10409,7 +11948,16 @@
     "Hero:HID_Ninja_014_F_SR_T05": {
       "templateId": "Hero:HID_Ninja_014_F_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10429,7 +11977,16 @@
     "Hero:HID_Ninja_014_R_T04": {
       "templateId": "Hero:HID_Ninja_014_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10449,7 +12006,16 @@
     "Hero:HID_Ninja_014_SR_T05": {
       "templateId": "Hero:HID_Ninja_014_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10469,7 +12035,16 @@
     "Hero:HID_Ninja_014_UC_T03": {
       "templateId": "Hero:HID_Ninja_014_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -10489,7 +12064,16 @@
     "Hero:HID_Ninja_014_VR_T05": {
       "templateId": "Hero:HID_Ninja_014_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10509,7 +12093,16 @@
     "Hero:HID_Ninja_TEST": {
       "templateId": "Hero:HID_Ninja_TEST",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -10529,7 +12122,16 @@
     "Hero:HID_Outlander_ZonePistolHW_VR_T05": {
       "templateId": "Hero:HID_Outlander_ZonePistolHW_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10549,7 +12151,16 @@
     "Hero:HID_Outlander_ZonePistolHW_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZonePistolHW_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10569,7 +12180,16 @@
     "Hero:HID_Outlander_ZonePistol_VR_T05": {
       "templateId": "Hero:HID_Outlander_ZonePistol_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10589,7 +12209,16 @@
     "Hero:HID_Outlander_ZonePistol_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZonePistol_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10609,7 +12238,16 @@
     "Hero:HID_Outlander_ZonePistol_R_T04": {
       "templateId": "Hero:HID_Outlander_ZonePistol_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10629,7 +12267,16 @@
     "Hero:HID_Outlander_ZoneHarvestHW_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZoneHarvestHW_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10649,7 +12296,16 @@
     "Hero:HID_Outlander_ZoneHarvest_VR_T05": {
       "templateId": "Hero:HID_Outlander_ZoneHarvest_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10669,7 +12325,16 @@
     "Hero:HID_Outlander_ZoneHarvest_UC_T03": {
       "templateId": "Hero:HID_Outlander_ZoneHarvest_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -10689,7 +12354,16 @@
     "Hero:HID_Outlander_ZoneHarvest_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZoneHarvest_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10709,7 +12383,16 @@
     "Hero:HID_Outlander_ZoneHarvest_R_T04": {
       "templateId": "Hero:HID_Outlander_ZoneHarvest_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10729,7 +12412,16 @@
     "Hero:HID_Outlander_ZoneFragment_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZoneFragment_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10749,7 +12441,16 @@
     "Hero:HID_Outlander_XBOX_VR_T05": {
       "templateId": "Hero:HID_Outlander_XBOX_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10769,7 +12470,16 @@
     "Hero:HID_Outlander_XBOX_SR_T05": {
       "templateId": "Hero:HID_Outlander_XBOX_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10789,7 +12499,16 @@
     "Hero:HID_Outlander_XBOX_R_T04": {
       "templateId": "Hero:HID_Outlander_XBOX_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10809,7 +12528,16 @@
     "Hero:HID_Outlander_SphereFragment_VR_T05": {
       "templateId": "Hero:HID_Outlander_SphereFragment_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10829,7 +12557,16 @@
     "Hero:HID_Outlander_SphereFragment_SR_T05": {
       "templateId": "Hero:HID_Outlander_SphereFragment_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10849,7 +12586,16 @@
     "Hero:HID_Outlander_SphereFragment_R_T04": {
       "templateId": "Hero:HID_Outlander_SphereFragment_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10869,7 +12615,16 @@
     "Hero:HID_Outlander_Sony_VR_T05": {
       "templateId": "Hero:HID_Outlander_Sony_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10889,7 +12644,16 @@
     "Hero:HID_Outlander_Sony_SR_T05": {
       "templateId": "Hero:HID_Outlander_Sony_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10909,7 +12673,16 @@
     "Hero:HID_Outlander_Sony_R_T04": {
       "templateId": "Hero:HID_Outlander_Sony_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -10926,7 +12699,16 @@
     "Hero:HID_Outlander_PunchPhase_VR_T05": {
       "templateId": "Hero:HID_Outlander_PunchPhase_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10946,7 +12728,16 @@
     "Hero:HID_Outlander_PunchPhase_UC_T03": {
       "templateId": "Hero:HID_Outlander_PunchPhase_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -10963,7 +12754,16 @@
     "Hero:HID_Outlander_PunchPhase_SR_T05": {
       "templateId": "Hero:HID_Outlander_PunchPhase_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -10980,7 +12780,16 @@
     "Hero:HID_Outlander_PunchPhase_R_T04": {
       "templateId": "Hero:HID_Outlander_PunchPhase_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -11000,7 +12809,16 @@
     "Hero:HID_Outlander_PunchDamage_VR_T05": {
       "templateId": "Hero:HID_Outlander_PunchDamage_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11020,7 +12838,16 @@
     "Hero:HID_Outlander_PunchDamage_SR_T05": {
       "templateId": "Hero:HID_Outlander_PunchDamage_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11040,7 +12867,16 @@
     "Hero:HID_Outlander_013_VR_T05": {
       "templateId": "Hero:HID_Outlander_013_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11060,7 +12896,16 @@
     "Hero:HID_Outlander_013_SR_T05": {
       "templateId": "Hero:HID_Outlander_013_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11080,7 +12925,16 @@
     "Hero:HID_Outlander_011_VR_T05": {
       "templateId": "Hero:HID_Outlander_011_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11100,7 +12954,16 @@
     "Hero:HID_Outlander_011_SR_T05": {
       "templateId": "Hero:HID_Outlander_011_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11120,7 +12983,16 @@
     "Hero:HID_Outlander_010_VR_T05": {
       "templateId": "Hero:HID_Outlander_010_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11140,7 +13012,16 @@
     "Hero:HID_Outlander_010_SR_T05": {
       "templateId": "Hero:HID_Outlander_010_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11160,7 +13041,16 @@
     "Hero:HID_Outlander_010_M_VR_T05": {
       "templateId": "Hero:HID_Outlander_010_M_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11180,7 +13070,16 @@
     "Hero:HID_Outlander_010_M_SR_T05": {
       "templateId": "Hero:HID_Outlander_010_M_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11200,7 +13099,16 @@
     "Hero:HID_Outlander_009_VR_T05": {
       "templateId": "Hero:HID_Outlander_009_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11220,7 +13128,16 @@
     "Hero:HID_Outlander_009_SR_T05": {
       "templateId": "Hero:HID_Outlander_009_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11240,7 +13157,16 @@
     "Hero:HID_Outlander_009_R_T04": {
       "templateId": "Hero:HID_Outlander_009_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -11260,7 +13186,16 @@
     "Hero:HID_Outlander_008_VR_T05": {
       "templateId": "Hero:HID_Outlander_008_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11280,7 +13215,16 @@
     "Hero:HID_Outlander_008_SR_T05": {
       "templateId": "Hero:HID_Outlander_008_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11300,7 +13244,16 @@
     "Hero:HID_Outlander_008_R_T04": {
       "templateId": "Hero:HID_Outlander_008_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -11320,7 +13273,16 @@
     "Hero:HID_Outlander_008_FoundersM_SR_T05": {
       "templateId": "Hero:HID_Outlander_008_FoundersM_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11340,7 +13302,16 @@
     "Hero:HID_Outlander_008_FoundersF_SR_T05": {
       "templateId": "Hero:HID_Outlander_008_FoundersF_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11360,7 +13331,16 @@
     "Hero:HID_Outlander_007_VR_T05": {
       "templateId": "Hero:HID_Outlander_007_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11380,7 +13360,16 @@
     "Hero:HID_Outlander_007_UC_T03": {
       "templateId": "Hero:HID_Outlander_007_UC_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -11400,7 +13389,16 @@
     "Hero:HID_Outlander_007_SR_T05": {
       "templateId": "Hero:HID_Outlander_007_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11420,7 +13418,16 @@
     "Hero:HID_Outlander_007_R_T04": {
       "templateId": "Hero:HID_Outlander_007_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -11440,7 +13447,16 @@
     "Hero:HID_Outlander_013_StPatricks_SR_T05": {
       "templateId": "Hero:HID_Outlander_013_StPatricks_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11460,7 +13476,16 @@
     "Hero:HID_Outlander_014_M_SR_T05": {
       "templateId": "Hero:HID_Outlander_014_M_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11480,7 +13505,16 @@
     "Hero:HID_Outlander_014_R_T04": {
       "templateId": "Hero:HID_Outlander_014_R_T04",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -11500,7 +13534,16 @@
     "Hero:HID_Outlander_014_SR_T05": {
       "templateId": "Hero:HID_Outlander_014_SR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11520,7 +13563,16 @@
     "Hero:HID_Outlander_014_VR_T05": {
       "templateId": "Hero:HID_Outlander_014_VR_T05",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -11540,7 +13592,16 @@
     "Hero:HID_Commando_Cinematic_TEST_R_T03": {
       "templateId": "Hero:HID_Commando_Cinematic_TEST_R_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -11560,7 +13621,16 @@
     "Hero:HID_Constructor_Cinematic_TEST_R_T03": {
       "templateId": "Hero:HID_Constructor_Cinematic_TEST_R_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -11580,7 +13650,16 @@
     "Hero:HID_Ninja_Cinematic_TEST_R_T03": {
       "templateId": "Hero:HID_Ninja_Cinematic_TEST_R_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -11600,7 +13679,16 @@
     "Hero:HID_Outlander_Cinematic_TEST_R_T03": {
       "templateId": "Hero:HID_Outlander_Cinematic_TEST_R_T03",
       "attributes": {
-        "equipped_cosmetics": ["", "", "", "", "", "", "", ""],
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "gender": 0,
         "level": 30,
         "item_seen": true,
@@ -28883,7 +30971,6 @@
       },
       "quantity": 1
     },
-
     "Quest:outpostquest_t2_l1": {
       "templateId": "Quest:outpostquest_t2_l1",
       "attributes": {
@@ -28934,7 +31021,6 @@
       },
       "quantity": 1
     },
-
     "Quest:outpostquest_t4_l1": {
       "templateId": "Quest:outpostquest_t4_l1",
       "attributes": {
@@ -28960,7 +31046,6 @@
       },
       "quantity": 1
     },
-
     "AccountResource:Voucher_Generic_Worker_VR": {
       "templateId": "AccountResource:Voucher_Generic_Worker_VR",
       "attributes": {
@@ -29864,7 +31949,6 @@
       },
       "quantity": 1
     },
-
     "DeployableBaseCloudSave:testdeployablebaseitemdef": {
       "templateId": "DeployableBaseCloudSave:testdeployablebaseitemdef",
       "attributes": {
@@ -32705,7 +34789,9 @@
       "templateId": "Expedition:expedition_sea_survivorscouting_short_t01",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresEpicNinja"],
+        "expedition_criteria": [
+          "RequiresEpicNinja"
+        ],
         "level": 1,
         "expedition_max_target_power": 120,
         "expedition_min_target_power": 6,
@@ -32744,7 +34830,9 @@
       "templateId": "Expedition:expedition_air_supplyrun_medium_t02",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresRareOutlander"],
+        "expedition_criteria": [
+          "RequiresRareOutlander"
+        ],
         "level": 1,
         "expedition_max_target_power": 230,
         "expedition_min_target_power": 11,
@@ -32770,7 +34858,9 @@
       "templateId": "Expedition:expedition_resourcerun_stone_short",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresRareConstructor"],
+        "expedition_criteria": [
+          "RequiresRareConstructor"
+        ],
         "level": 1,
         "expedition_max_target_power": 110,
         "expedition_min_target_power": 5,
@@ -32796,7 +34886,9 @@
       "templateId": "Expedition:expedition_sea_survivorscouting_medium_t02",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresRareNinja"],
+        "expedition_criteria": [
+          "RequiresRareNinja"
+        ],
         "level": 1,
         "expedition_max_target_power": 270,
         "expedition_min_target_power": 13,
@@ -32809,7 +34901,9 @@
       "templateId": "Expedition:expedition_sea_survivorscouting_medium_t03",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresRareOutlander"],
+        "expedition_criteria": [
+          "RequiresRareOutlander"
+        ],
         "level": 1,
         "expedition_max_target_power": 370,
         "expedition_min_target_power": 18,
@@ -32835,7 +34929,9 @@
       "templateId": "Expedition:expedition_air_survivorscouting_medium_t03",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresLegendaryNinja"],
+        "expedition_criteria": [
+          "RequiresLegendaryNinja"
+        ],
         "level": 1,
         "expedition_max_target_power": 390,
         "expedition_min_target_power": 19,
@@ -32861,7 +34957,9 @@
       "templateId": "Expedition:expedition_supplyrun_short_t03",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresLegendaryCommando"],
+        "expedition_criteria": [
+          "RequiresLegendaryCommando"
+        ],
         "level": 1,
         "expedition_max_target_power": 225,
         "expedition_min_target_power": 11,
@@ -32874,7 +34972,9 @@
       "templateId": "Expedition:expedition_craftingrun_long_t03",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresEpicConstructor"],
+        "expedition_criteria": [
+          "RequiresEpicConstructor"
+        ],
         "level": 1,
         "expedition_max_target_power": 475,
         "expedition_min_target_power": 23,
@@ -32887,7 +34987,10 @@
       "templateId": "Expedition:expedition_rare_heroes_t04",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresRareNinja", "RequiresRareConstructor"],
+        "expedition_criteria": [
+          "RequiresRareNinja",
+          "RequiresRareConstructor"
+        ],
         "level": 1,
         "expedition_max_target_power": 1440,
         "expedition_min_target_power": 72,
@@ -32965,7 +35068,10 @@
       "templateId": "Expedition:expedition_choppingwood_t00",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresCommando", "RequiresRareConstructor"],
+        "expedition_criteria": [
+          "RequiresCommando",
+          "RequiresRareConstructor"
+        ],
         "level": 1,
         "expedition_max_target_power": 20,
         "expedition_min_target_power": 1,
@@ -32978,7 +35084,9 @@
       "templateId": "Expedition:expedition_miningore_t00",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresNinja"],
+        "expedition_criteria": [
+          "RequiresNinja"
+        ],
         "level": 1,
         "expedition_max_target_power": 25,
         "expedition_min_target_power": 1,
@@ -32991,7 +35099,9 @@
       "templateId": "Expedition:expedition_resourcerun_wood_short",
       "attributes": {
         "expedition_expiration_end_time": "2026-09-05T08:55:08.185Z",
-        "expedition_criteria": ["RequiresOutlander"],
+        "expedition_criteria": [
+          "RequiresOutlander"
+        ],
         "level": 1,
         "expedition_max_target_power": 95,
         "expedition_min_target_power": 4,
@@ -33025,7 +35135,11 @@
       "mission_alert_redemption_record": {
         "lastClaimTimesMap": {
           "General": {
-            "missionAlertGUIDs": ["", "", ""],
+            "missionAlertGUIDs": [
+              "",
+              "",
+              ""
+            ],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -33033,7 +35147,12 @@
             ]
           },
           "StormLow": {
-            "missionAlertGUIDs": ["", "", "", ""],
+            "missionAlertGUIDs": [
+              "",
+              "",
+              "",
+              ""
+            ],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -33042,7 +35161,18 @@
             ]
           },
           "Halloween": {
-            "missionAlertGUIDs": ["", "", "", "", "", "", "", "", "", ""],
+            "missionAlertGUIDs": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -33057,7 +35187,14 @@
             ]
           },
           "Horde": {
-            "missionAlertGUIDs": ["", "", "", "", "", ""],
+            "missionAlertGUIDs": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -33068,7 +35205,18 @@
             ]
           },
           "Storm": {
-            "missionAlertGUIDs": ["", "", "", "", "", "", "", "", "", ""],
+            "missionAlertGUIDs": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -33083,7 +35231,13 @@
             ]
           }
         },
-        "oldestClaimIndexForCategory": [0, 0, 0, 0, 0]
+        "oldestClaimIndexForCategory": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
       },
       "twitch": {},
       "client_settings": {
@@ -33096,8 +35250,8 @@
           "last_incremented_time": "2024-05-23T14:03:33.864Z"
         },
         "SubGameSelectCount_Athena": {
-          "current_count": 7,
-          "last_incremented_time": "2024-05-23T13:57:38.022Z"
+          "current_count": 8,
+          "last_incremented_time": "2026-10-28T22:12:57.014Z"
         }
       },
       "default_hero_squad_id": "",
@@ -33203,7 +35357,10 @@
       "mode_loadouts": [
         {
           "loadoutName": "Default",
-          "selectedGadgets": ["", ""]
+          "selectedGadgets": [
+            "",
+            ""
+          ]
         }
       ],
       "in_app_purchases": {
@@ -33241,5 +35398,5 @@
       "packs_granted": 13
     }
   },
-  "commandRevision": 10
+  "commandRevision": 11
 }

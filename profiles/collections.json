@@ -2,14 +2,187 @@
   "_id": "LawinServer",
   "created": "0001-01-01T00:00:00.000Z",
   "updated": "0001-01-01T00:00:00.000Z",
-  "rvn": 1,
+  "rvn": 50,
   "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "collections",
   "version": "no_version",
-  "items": {},
-  "stats": {
-    "attributes": {}
+  "items": {
+    "32b3ae16-2bbb-4d65-9ddf-0d8de2b2dac1": {
+      "templateId": "CollectableFish:flopper",
+      "attributes": {
+        "collected": [
+          {
+            "variantTag": "Fish.Flopper.Green",
+            "contextTags": [
+              "Athena.Location.UnNamedPOI.Tandem.CosmosCrashSite"
+            ],
+            "properties": {
+              "Weight": 3,
+              "Length": 42.36
+            },
+            "seenState": "Collected",
+            "count": 2
+          },
+          {
+            "variantTag": "Fish.Flopper.Orange",
+            "contextTags": [
+              "Athena.Location.UnNamedPOI.Tandem.CosmosCrashSite"
+            ],
+            "properties": {
+              "Weight": 3,
+              "Length": 38.56
+            },
+            "seenState": "Collected",
+            "count": 1
+          },
+          {
+            "variantTag": "Fish.Flopper.Blue",
+            "contextTags": [
+              "Athena.Location.UnnamedPOI.CanoeRentals"
+            ],
+            "properties": {
+              "Weight": 3,
+              "Length": 60.11
+            },
+            "seenState": "Collected",
+            "count": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "b7e90947-e997-4b7f-a035-cd7330da960c": {
+      "templateId": "CollectableFish:jellyfish",
+      "attributes": {
+        "collected": [
+          {
+            "variantTag": "Fish.JellyFish.LightBlue",
+            "contextTags": [
+              "Athena.Location.UnNamedPOI.Tandem.CosmosCrashSite",
+              "Athena.Location.UnnamedPOI.CanoeRentals"
+            ],
+            "properties": {
+              "Weight": 3,
+              "Length": 39.79
+            },
+            "seenState": "Collected",
+            "count": 2
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "2f0ec404-d392-4fa7-a770-953888169574": {
+      "templateId": "CollectableFish:effectiveflopper",
+      "attributes": {
+        "collected": [
+          {
+            "variantTag": "Fish.EffectiveFlopper.Blue",
+            "contextTags": [
+              "Athena.Location.UnNamedPOI.Tandem.CosmosCrashSite"
+            ],
+            "properties": {
+              "Weight": 3,
+              "Length": 40.22
+            },
+            "seenState": "Collected",
+            "count": 2
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "8e49db40-0332-4846-852c-582476a6fd4e": {
+      "templateId": "CollectableCharacter:tandem",
+      "attributes": {
+        "collected": [
+          {
+            "variantTag": "AISpawnerData.Type.Tandem.Outlaw",
+            "contextTags": [
+              "Athena.Location.UnNamedPOI.ButterBarn"
+            ],
+            "properties": {
+              "QuestsGiven": 0,
+              "QuestsCompleted": 0
+            },
+            "seenState": "Collected",
+            "count": 1
+          },
+          {
+            "variantTag": "AISpawnerData.Type.Tandem.Gladiator",
+            "contextTags": [
+              "Athena.Location.POI.Coliseum"
+            ],
+            "properties": {
+              "QuestsGiven": 0,
+              "QuestsCompleted": 0
+            },
+            "seenState": "Collected",
+            "count": 1
+          },
+          {
+            "variantTag": "AISpawnerData.Type.Tandem.Turk",
+            "contextTags": [
+              "Athena.Location.UnnamedPOI.CanoeRentals"
+            ],
+            "properties": {
+              "QuestsGiven": 0,
+              "QuestsCompleted": 0
+            },
+            "seenState": "Collected",
+            "count": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "d19f8e40-82b0-4c97-8e4c-1086b5876ff6": {
+      "templateId": "CollectableFish:snowman",
+      "attributes": {
+        "collected": [
+          {
+            "variantTag": "Fish.Snowman.Default",
+            "contextTags": [
+              "Athena.Location.UnNamedPOI.ButterBarn",
+              "Athena.Location.UnNamedPOI.Tandem.CosmosCrashSite"
+            ],
+            "properties": {
+              "Weight": 3,
+              "Length": 51.39
+            },
+            "seenState": "Collected",
+            "count": 2
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "79a2cfd3-ad4a-457b-bfe0-d3c31cae7763": {
+      "templateId": "CollectableFish:lesseffectiveflopper",
+      "attributes": {
+        "collected": [
+          {
+            "variantTag": "Fish.LessEffectiveFlopper.Tan",
+            "contextTags": [
+              "Athena.Location.UnNamedPOI.ButterBarn"
+            ],
+            "properties": {
+              "Weight": 3,
+              "Length": 26.16
+            },
+            "seenState": "Collected",
+            "count": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
   },
-  "commandRevision": 0
+  "stats": {
+    "attributes": {
+      "current_season": 15
+    }
+  },
+  "commandRevision": 49
 }

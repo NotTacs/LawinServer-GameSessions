@@ -4,7 +4,6 @@ const fs = require("fs");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 
-// Logs every request (Hono-style <-- / --> lines); see structure/logger.js
 express.use(require("./structure/logger.js"));
 
 express.use(Express.json());
@@ -26,13 +25,17 @@ express.use(require("./structure/lightswitch.js"));
 express.use(require("./structure/affiliate.js"));
 express.use(require("./structure/matchmaking.js"));
 express.use(require("./structure/cloudstorage.js"));
+express.use(require("./structure/dss.js"));
+express.use(require("./structure/creative.js"));
 express.use(require("./structure/mcp.js"));
+express.use(require("./structure/vivox.js"));
 
 const port = process.env.PORT || 3551;
 express.listen(port, () => {
     console.log("LawinServer started listening on port", port);
 
     require("./structure/xmpp.js");
+    require("./structure/sip.js").start();
 }).on("error", (err) => {
     if (err.code == "EADDRINUSE") console.log(`\x1b[31mERROR\x1b[0m: Port ${port} is already in use!`);
     else throw err;
@@ -43,11 +46,10 @@ express.listen(port, () => {
 try {
     if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer"))) fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer"));
 } catch (err) {
-    // fallback
+
     if (!fs.existsSync(path.join(__dirname, "ClientSettings"))) fs.mkdirSync(path.join(__dirname, "ClientSettings"));
 }
 
-// if endpoint not found, return this error
 express.use((req, res, next) => {
     var XEpicErrorName = "errors.com.lawinserver.common.not_found";
     var XEpicErrorCode = 1004;
@@ -57,7 +59,6 @@ express.use((req, res, next) => {
         return res.status(200).json(assets);
     }
 
-    // tagged by the request logger so endpoints we haven't implemented yet stand out
     res.locals.unhandled = true;
 
     res.set({

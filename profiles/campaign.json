@@ -2,7 +2,7 @@
   "_id": "LawinServer",
   "created": "0001-01-01T00:00:00.000Z",
   "updated": "0001-01-01T00:00:00.000Z",
-  "rvn": 7,
+  "rvn": 37,
   "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "campaign",
@@ -204,7 +204,7 @@
             },
             "Character": {
               "items": [
-                ""
+                "AthenaCharacter:CID_008_Athena_Commando_M_Default"
               ]
             }
           }
@@ -53629,80 +53629,57 @@
         "highest_rarity": 2,
         "xp": 0,
         "offerId": "2D09C70ABD0049EBAF1D4054127287FF",
-        "expiration": "2021-10-27T00:00:00.000Z",
+        "expiration": "2026-11-08T23:59:59.999Z",
         "items": [
           {
-            "itemType": "Hero:hid_constructor_015_r_t01",
-            "attributes": {},
-            "quantity": 1
-          },
-          {
-            "itemType": "Schematic:sid_assault_singleshot_r_ore_t01",
+            "itemType": "CardPack:cardpack_choice_all_sr",
             "attributes": {
-              "Alteration": {
-                "LootTierGroup": "AlterationTG.Ranged.R",
-                "Tier": 0
-              },
-              "alterations": [
-                "Alteration:aid_att_critdamage_t01",
-                "Alteration:aid_att_reloadspeed_ranged_t02",
-                "Alteration:aid_att_damage_physical_t02",
-                "Alteration:aid_att_critdamage_t02",
-                "Alteration:aid_conditional_boss_dmgbonus_t03",
-                "Alteration:aid_g_ranged_headshot_explodeondeath_v2"
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "Worker:workerbasic_r_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsAnalytical",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Analytical-M01.IconDef-WorkerPortrait-Analytical-M01",
-              "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "Worker:managermartialartist_r_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsCurious",
-              "gender": "2",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-ManagerPortrait-MartialArtist-F01.IconDef-ManagerPortrait-MartialArtist-F01"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "CardPack:cardpack_choice_melee_vr",
-            "attributes": {
-              "pack_source": "",
+              "level": 1,
+              "pack_source": "Store",
               "options": [
                 {
-                  "itemType": "Schematic:sid_piercing_spear_laser_vr_ore_t01",
+                  "itemType": "Schematic:sid_wall_wood_spikes_sr_t01",
                   "attributes": {
+                    "legacy_alterations": [],
+                    "max_level_bonus": 0,
+                    "level": 1,
+                    "refund_legacy_item": false,
+                    "item_seen": false,
                     "alterations": [
-                      "Alteration:aid_att_critdamage_t02",
-                      "Alteration:aid_att_movementspeed_t01",
-                      "Alteration:aid_ele_energy_t02",
-                      "Alteration:aid_att_firerate_melee_t03",
-                      "Alteration:aid_conditional_slowed_dmgbonus_t03",
-                      "Alteration:aid_g_onmeleekill_regenshields"
-                    ]
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "xp": 0,
+                    "refundable": false,
+                    "alteration_base_rarities": [],
+                    "favorite": false
                   },
                   "quantity": 1
                 },
                 {
-                  "itemType": "Schematic:sid_piercing_spear_scavenger_vr_ore_t01",
+                  "itemType": "Schematic:sid_pistol_zapper_sr_ore_t01",
                   "attributes": {
+                    "legacy_alterations": [],
+                    "max_level_bonus": 0,
+                    "level": 1,
+                    "refund_legacy_item": false,
+                    "item_seen": false,
                     "alterations": [
-                      "Alteration:aid_att_critdamage_t01",
-                      "Alteration:aid_att_damage_t02",
-                      "Alteration:aid_att_damage_physical_t03",
-                      "Alteration:aid_att_critdamage_t02",
-                      "Alteration:aid_conditional_boss_dmgbonus_t03",
-                      "Alteration:aid_g_onmeleehit_stackbuff_critrate"
-                    ]
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "xp": 0,
+                    "refundable": false,
+                    "alteration_base_rarities": [],
+                    "favorite": false
                   },
                   "quantity": 1
                 }
@@ -53711,45 +53688,242 @@
             "quantity": 1
           },
           {
-            "itemType": "Worker:workerbasic_vr_t01",
+            "itemType": "Hero:hid_constructor_basehyper_r_t01",
             "attributes": {
-              "personality": "Homebase.Worker.Personality.IsDependable",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Dependable-M02.IconDef-WorkerPortrait-Dependable-M02",
-              "set_bonus": "Homebase.Worker.SetBonus.IsResistanceLow"
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
             },
             "quantity": 1
           },
           {
-            "itemType": "AccountResource:eventcurrency_candy",
-            "attributes": {},
-            "quantity": 500
+            "itemType": "Hero:hid_ninja_starsrain_vr_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
           },
           {
-            "itemType": "Schematic:sid_wall_electric_sr_t01",
+            "itemType": "Schematic:sid_sniper_auto_uc_ore_t01",
             "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
               "alterations": [
-                "Alteration:aid_ele_nature_intrin_t01",
-                "Alteration:aid_att_damage_t02",
-                "Alteration:aid_att_reloadspeed_trap_t02",
-                "Alteration:aid_att_damage_t03",
-                "Alteration:aid_att_damage_t03",
-                "Alteration:aid_att_buildingheal_t03"
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "CardPack:cardpack_choice_weapon_vr",
+            "attributes": {
+              "level": 1,
+              "pack_source": "Store",
+              "options": [
+                {
+                  "itemType": "Schematic:sid_piercing_spear_military_vr_ore_t01",
+                  "attributes": {
+                    "legacy_alterations": [],
+                    "max_level_bonus": 0,
+                    "level": 1,
+                    "refund_legacy_item": false,
+                    "item_seen": false,
+                    "alterations": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "xp": 0,
+                    "refundable": false,
+                    "alteration_base_rarities": [],
+                    "favorite": false
+                  },
+                  "quantity": 1
+                },
+                {
+                  "itemType": "Schematic:sid_edged_sword_light_vr_ore_t01",
+                  "attributes": {
+                    "legacy_alterations": [],
+                    "max_level_bonus": 0,
+                    "level": 1,
+                    "refund_legacy_item": false,
+                    "item_seen": false,
+                    "alterations": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "xp": 0,
+                    "refundable": false,
+                    "alteration_base_rarities": [],
+                    "favorite": false
+                  },
+                  "quantity": 1
+                }
               ]
             },
             "quantity": 1
           },
           {
-            "itemType": "Schematic:sid_blunt_hammer_rocket_vt_sr_ore_t01",
+            "itemType": "Schematic:sid_ceiling_gas_vr_t01",
             "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
               "alterations": [
-                "Alteration:aid_att_firerate_melee_t01",
-                "Alteration:aid_att_movementspeed_t02",
-                "Alteration:aid_att_damage_physical_t02",
-                "Alteration:aid_att_damage_t02",
-                "Alteration:aid_conditional_afflicted_dmgbonus_t03",
-                "Alteration:aid_g_onmeleehit_stackbuff_movespeed"
-              ]
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Schematic:sid_assault_semiauto_r_ore_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Schematic:sid_edged_sword_medium_vr_ore_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Hero:hid_constructor_plasmadamage_r_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Schematic:sid_edged_axe_medium_laser_sr_ore_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
             },
             "quantity": 1
           }
@@ -53770,68 +53944,228 @@
         "highest_rarity": 0,
         "xp": 0,
         "offerId": "D2E08EFA731D437B85B7340EB51A5E1D",
-        "expiration": "2021-10-27T00:00:00.000Z",
+        "expiration": "2026-11-08T23:59:59.999Z",
         "items": [
           {
-            "itemType": "Worker:workerbasic_uc_t01",
+            "itemType": "Schematic:sid_wall_darts_vr_t01",
             "attributes": {
-              "personality": "Homebase.Worker.Personality.IsCooperative",
-              "gender": "2",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Cooperative-F03.IconDef-WorkerPortrait-Cooperative-F03",
-              "set_bonus": "Homebase.Worker.SetBonus.IsFortitudeLow"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "Schematic:sid_pistol_auto_uc_ore_t01",
-            "attributes": {
-              "Alteration": {
-                "LootTierGroup": "AlterationTG.Ranged.UC",
-                "Tier": 0
-              },
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
               "alterations": [
-                "Alteration:aid_att_damage_t01",
-                "Alteration:aid_att_stability_t01",
-                "Alteration:aid_ele_energy_t02",
-                "Alteration:aid_att_magazinesize_t02",
-                "Alteration:aid_conditional_boss_dmgbonus_t03",
-                "Alteration:aid_g_ranged_headshotstreak_dmgbonus_v2"
-              ]
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
             },
             "quantity": 1
           },
           {
-            "itemType": "Schematic:sid_blunt_light_uc_ore_t01",
+            "itemType": "Schematic:sid_pistol_bolt_sr_ore_t01",
             "attributes": {
-              "Alteration": {
-                "LootTierGroup": "AlterationTG.Melee.UC",
-                "Tier": 0
-              },
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
               "alterations": [
-                "Alteration:aid_att_firerate_melee_t01",
-                "Alteration:aid_att_maxdurability_t01",
-                "Alteration:aid_att_damage_physical_t02",
-                "Alteration:aid_att_damage_t03",
-                "Alteration:aid_conditional_boss_dmgbonus_t03",
-                "Alteration:aid_g_weapon_ondmg_applysnare_v2"
-              ]
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
             },
             "quantity": 1
           },
           {
-            "itemType": "Worker:workerbasic_r_t01",
+            "itemType": "Hero:hid_outlander_zonepistol_sr_t01",
             "attributes": {
-              "personality": "Homebase.Worker.Personality.IsAnalytical",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Analytical-M02.IconDef-WorkerPortrait-Analytical-M02",
-              "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
             },
             "quantity": 1
           },
           {
-            "itemType": "AccountResource:eventcurrency_candy",
-            "attributes": {},
-            "quantity": 50
+            "itemType": "Schematic:sid_pistol_bolt_vr_ore_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Schematic:sid_edged_axe_heavy_uc_ore_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Hero:hid_outlander_008_vr_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Hero:hid_commando_guntough_vr_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Schematic:sid_sniper_amr_r_ore_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Worker:managerengineer_sr_countess_t01",
+            "attributes": {
+              "level": 1,
+              "item_seen": false,
+              "squad_slot_idx": -1,
+              "building_slot_used": -1,
+              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-ManagerPortrait-SR-Engineer-countess.IconDef-ManagerPortrait-SR-Engineer-countess",
+              "personality": "Homebase.Worker.Personality.IsPragmatic",
+              "managerSynergy": "Homebase.Manager.IsEngineer",
+              "gender": "2"
+            },
+            "quantity": 1
+          },
+          {
+            "itemType": "Schematic:sid_wall_electric_sr_t01",
+            "attributes": {
+              "legacy_alterations": [],
+              "max_level_bonus": 0,
+              "level": 1,
+              "refund_legacy_item": false,
+              "item_seen": false,
+              "alterations": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "xp": 0,
+              "refundable": false,
+              "alteration_base_rarities": [],
+              "favorite": false
+            },
+            "quantity": 1
           }
         ],
         "favorite": false
@@ -63691,347 +64025,378 @@
       },
       "quantity": 1
     },
-    "23291bf6-2fa2-47d3-afb3-6f478a4b685b": {
+    "144d784c-ce34-4563-8b3d-0dc38432989b": {
+      "templateId": "Quest:Daily_Mission_Specialist_Constructor",
+      "attributes": {
+        "creation_time": "2026-11-08T22:33:57.723Z",
+        "level": -1,
+        "item_seen": false,
+        "sent_new_notification": true,
+        "xp_reward_scalar": 1,
+        "quest_state": "Active",
+        "last_state_change_time": "2026-11-08T22:33:57.723Z",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "favorite": false,
+        "completion_complete_constructor": 0
+      },
+      "quantity": 1
+    },
+    "02d43a59-e230-4506-aa4c-28a75b5aa460": {
+      "templateId": "Quest:Daily_DestroyGnomes",
+      "attributes": {
+        "creation_time": "2026-11-11T23:44:04.818Z",
+        "level": -1,
+        "item_seen": false,
+        "sent_new_notification": true,
+        "xp_reward_scalar": 1,
+        "quest_state": "Active",
+        "last_state_change_time": "2026-11-11T23:44:04.818Z",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "favorite": false,
+        "completion_quest_reactive_destroygnome_v2": 0
+      },
+      "quantity": 1
+    },
+    "5e63d2af-993c-44c6-a05a-1b9ff3882fe8": {
       "templateId": "Expedition:expedition_choppingwood_t00",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [],
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresCommando"
+        ],
         "level": 1,
         "expedition_max_target_power": 20,
         "expedition_min_target_power": 1,
         "expedition_slot_id": "expedition.generation.miningore",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "3045036e-ba58-4ec0-9b89-908b65272e36": {
+    "f00c5b9d-3179-4099-a29c-261587f5af00": {
       "templateId": "Expedition:expedition_miningore_t00",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
         "expedition_criteria": [
-          "RequiresCommando"
+          "RequiresEpicConstructor"
         ],
         "level": 1,
         "expedition_max_target_power": 25,
         "expedition_min_target_power": 1,
         "expedition_slot_id": "expedition.generation.choppingwood",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "a441b7d6-86a8-458f-89a4-1a621657ad5d": {
-      "templateId": "Expedition:expedition_resourcerun_stone_medium",
+    "eb5d33df-8470-420f-8ffd-8e886dc41b77": {
+      "templateId": "Expedition:expedition_supplyrun_medium_t01",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
         "expedition_criteria": [
-          "RequiresLegendaryConstructor"
+          "RequiresRareNinja",
+          "RequiresEpicConstructor"
         ],
         "level": 1,
-        "expedition_max_target_power": 120,
-        "expedition_min_target_power": 6,
-        "expedition_slot_id": "expedition.generation.land.t01_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "740ab804-7228-4f7c-8b45-cb7efa469d87": {
-      "templateId": "Expedition:expedition_resourcerun_stone_medium",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresCommando"
-        ],
-        "level": 1,
-        "expedition_max_target_power": 120,
-        "expedition_min_target_power": 6,
-        "expedition_slot_id": "expedition.generation.land.t01_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "aa64b35c-4529-4fe6-83f2-db2d688f0766": {
-      "templateId": "Expedition:expedition_sea_supplyrun_short_t01",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [],
-        "level": 1,
-        "expedition_max_target_power": 110,
+        "expedition_max_target_power": 105,
         "expedition_min_target_power": 5,
-        "expedition_slot_id": "expedition.generation.sea.t01_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_slot_id": "expedition.generation.land.t01_0",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "63e9ee99-87d5-4edb-b38e-43f38097a4fb": {
+    "6a754825-95b2-45d0-ae5e-7c9b2c2f11aa": {
+      "templateId": "Expedition:expedition_supplyrun_medium_t01",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresRareConstructor"
+        ],
+        "level": 1,
+        "expedition_max_target_power": 105,
+        "expedition_min_target_power": 5,
+        "expedition_slot_id": "expedition.generation.land.t01_1",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "51445d4f-537c-4415-8e2c-e4741d905b6e": {
+      "templateId": "Expedition:expedition_sea_survivorscouting_short_t01",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresLegendaryCommando"
+        ],
+        "level": 1,
+        "expedition_max_target_power": 120,
+        "expedition_min_target_power": 6,
+        "expedition_slot_id": "expedition.generation.sea.t01_0",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "78cbcc5e-c4ca-4417-a801-e81385c3bfc6": {
       "templateId": "Expedition:expedition_sea_supplyrun_short_t01",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresLegendaryConstructor"
-        ],
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [],
         "level": 1,
         "expedition_max_target_power": 110,
         "expedition_min_target_power": 5,
         "expedition_slot_id": "expedition.generation.sea.t01_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "2c2b76e4-ca22-4f66-9492-cac4045a8b68": {
-      "templateId": "Expedition:expedition_air_supplyrun_long_t02",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [],
-        "level": 1,
-        "expedition_max_target_power": 330,
-        "expedition_min_target_power": 16,
-        "expedition_slot_id": "expedition.generation.air.t02_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "3f99968b-91c0-46aa-91db-948cea61114f": {
+    "e309d22b-b2dc-41af-8666-91a205ecb449": {
       "templateId": "Expedition:expedition_air_survivorscouting_long_t02",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresNinja"
-        ],
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [],
         "level": 1,
         "expedition_max_target_power": 385,
         "expedition_min_target_power": 19,
-        "expedition_slot_id": "expedition.generation.air.t02_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_slot_id": "expedition.generation.air.t02_0",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "e7f0e6fc-4c1e-4aae-acc8-f573a60ac51c": {
+    "f39eb373-d5b9-4adc-a2a2-52a50f2f5ec6": {
+      "templateId": "Expedition:expedition_air_supplyrun_medium_t02",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresEpicCommando"
+        ],
+        "level": 1,
+        "expedition_max_target_power": 230,
+        "expedition_min_target_power": 11,
+        "expedition_slot_id": "expedition.generation.air.t02_1",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "6e3034be-88b7-42e2-b448-a4063ba24e70": {
+      "templateId": "Expedition:expedition_supplyrun_short_t02",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [],
+        "level": 1,
+        "expedition_max_target_power": 155,
+        "expedition_min_target_power": 7,
+        "expedition_slot_id": "expedition.generation.land.t02_0",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "a7524726-4c2e-4ef0-ac89-7a3d912bcd9b": {
       "templateId": "Expedition:expedition_resourcerun_stone_medium",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresRareNinja",
-          "RequiresLegendaryOutlander"
-        ],
-        "level": 1,
-        "expedition_max_target_power": 120,
-        "expedition_min_target_power": 6,
-        "expedition_slot_id": "expedition.generation.land.t02_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "d35f10d7-34c4-49bf-b5fb-48b55ec0fafd": {
-      "templateId": "Expedition:expedition_survivorscouting_medium_t02",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresLegendaryCommando"
-        ],
-        "level": 1,
-        "expedition_max_target_power": 250,
-        "expedition_min_target_power": 12,
-        "expedition_slot_id": "expedition.generation.land.t02_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "213cdb04-7a7c-42c5-8cd7-045e32ef9a24": {
-      "templateId": "Expedition:expedition_sea_survivorscouting_medium_t02",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [],
-        "level": 1,
-        "expedition_max_target_power": 270,
-        "expedition_min_target_power": 13,
-        "expedition_slot_id": "expedition.generation.sea.t02_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "217a5b01-6b75-4536-b8bb-4cc5e58dcbfa": {
-      "templateId": "Expedition:expedition_sea_supplyrun_medium_t02",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresCommando",
-          "RequiresLegendaryNinja"
-        ],
-        "level": 1,
-        "expedition_max_target_power": 215,
-        "expedition_min_target_power": 10,
-        "expedition_slot_id": "expedition.generation.sea.t02_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "21c54355-0b1e-44db-91ca-f542c2aca853": {
-      "templateId": "Expedition:expedition_sea_survivorscouting_medium_t03",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresLegendaryCommando"
-        ],
-        "level": 1,
-        "expedition_max_target_power": 370,
-        "expedition_min_target_power": 18,
-        "expedition_slot_id": "expedition.generation.sea.t03_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "049a2006-2710-4ccb-8bde-420abb8d9fef": {
-      "templateId": "Expedition:expedition_sea_survivorscouting_medium_t03",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresEpicConstructor"
-        ],
-        "level": 1,
-        "expedition_max_target_power": 370,
-        "expedition_min_target_power": 18,
-        "expedition_slot_id": "expedition.generation.sea.t03_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "a44414c7-0d6a-4a3e-aa74-80f39c058bac": {
-      "templateId": "Expedition:expedition_air_supplyrun_long_t03",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [],
-        "level": 1,
-        "expedition_max_target_power": 520,
-        "expedition_min_target_power": 26,
-        "expedition_slot_id": "expedition.generation.air.t03_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "937a7b96-ec4b-4408-892c-965d7a676273": {
-      "templateId": "Expedition:expedition_air_survivorscouting_medium_t03",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
         "expedition_criteria": [
           "RequiresRareOutlander"
         ],
         "level": 1,
-        "expedition_max_target_power": 390,
-        "expedition_min_target_power": 19,
-        "expedition_slot_id": "expedition.generation.air.t03_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_max_target_power": 120,
+        "expedition_min_target_power": 6,
+        "expedition_slot_id": "expedition.generation.land.t02_1",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "febbc225-088a-401c-8fcb-9964dedd66a7": {
-      "templateId": "Expedition:expedition_craftingrun_medium_t03",
+    "e7a569a8-8e14-49c3-a0d7-8050b12c3df7": {
+      "templateId": "Expedition:expedition_sea_supplyrun_medium_t02",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
         "expedition_criteria": [],
+        "level": 1,
+        "expedition_max_target_power": 215,
+        "expedition_min_target_power": 10,
+        "expedition_slot_id": "expedition.generation.sea.t02_0",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "77f42589-0907-438d-bbbc-dab9b38741b8": {
+      "templateId": "Expedition:expedition_sea_survivorscouting_medium_t02",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [],
+        "level": 1,
+        "expedition_max_target_power": 270,
+        "expedition_min_target_power": 13,
+        "expedition_slot_id": "expedition.generation.sea.t02_1",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "f42241e7-4506-432a-9e7c-778a510c4e2a": {
+      "templateId": "Expedition:expedition_sea_survivorscouting_medium_t03",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [],
+        "level": 1,
+        "expedition_max_target_power": 370,
+        "expedition_min_target_power": 18,
+        "expedition_slot_id": "expedition.generation.sea.t03_0",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "fe5b58b5-e15f-4737-91cd-04d7e15d91ce": {
+      "templateId": "Expedition:expedition_sea_supplyrun_long_t03",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresLegendaryCommando",
+          "RequiresEpicCommando"
+        ],
+        "level": 1,
+        "expedition_max_target_power": 500,
+        "expedition_min_target_power": 25,
+        "expedition_slot_id": "expedition.generation.sea.t03_1",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "01378c03-373f-473f-b4c0-14dfeb93dc23": {
+      "templateId": "Expedition:expedition_air_supplyrun_long_t03",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresEpicCommando"
+        ],
+        "level": 1,
+        "expedition_max_target_power": 520,
+        "expedition_min_target_power": 26,
+        "expedition_slot_id": "expedition.generation.air.t03_0",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "f54f7cab-a585-4e11-a8ae-c347f7a1b0b7": {
+      "templateId": "Expedition:expedition_air_survivorscouting_medium_t03",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [],
+        "level": 1,
+        "expedition_max_target_power": 390,
+        "expedition_min_target_power": 19,
+        "expedition_slot_id": "expedition.generation.air.t03_1",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "8cd86dea-510c-4a73-8289-e4deba7ec726": {
+      "templateId": "Expedition:expedition_supplyrun_medium_t03",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresConstructor"
+        ],
         "level": 1,
         "expedition_max_target_power": 275,
         "expedition_min_target_power": 13,
         "expedition_slot_id": "expedition.generation.land.t03_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "35c07d7e-a3e0-4d00-ad88-f2dd9bdca2a8": {
-      "templateId": "Expedition:expedition_supplyrun_short_t03",
+    "eb4572e1-0b8a-446e-9900-901e917ac58e": {
+      "templateId": "Expedition:expedition_craftingrun_long_t03",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
         "expedition_criteria": [],
         "level": 1,
-        "expedition_max_target_power": 225,
-        "expedition_min_target_power": 11,
+        "expedition_max_target_power": 475,
+        "expedition_min_target_power": 23,
         "expedition_slot_id": "expedition.generation.land.t03_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "62c09685-7581-4771-bc81-209d0c5f75af": {
-      "templateId": "Expedition:expedition_survivorscouting_long_t04",
+    "81c49234-bb12-4f3d-9787-dc330bbdf831": {
+      "templateId": "Expedition:expedition_supplyrun_long_t04",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
         "expedition_criteria": [
-          "RequiresOutlander"
-        ],
-        "level": 1,
-        "expedition_max_target_power": 785,
-        "expedition_min_target_power": 39,
-        "expedition_slot_id": "expedition.generation.land.t04_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
-      },
-      "quantity": 1
-    },
-    "480bb05c-fe4f-4697-859f-857877e2f153": {
-      "templateId": "Expedition:expedition_craftingrun_long_t04",
-      "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresRareNinja"
+          "RequiresRareCommando",
+          "RequiresRareConstructor"
         ],
         "level": 1,
         "expedition_max_target_power": 685,
         "expedition_min_target_power": 34,
-        "expedition_slot_id": "expedition.generation.land.t04_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_slot_id": "expedition.generation.land.t04_0",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "b7f9fcd8-db60-4791-a532-956d50cf47c4": {
+    "1e874734-a9c8-473f-8962-0bd0918b9fb9": {
+      "templateId": "Expedition:expedition_survivorscouting_long_t04",
+      "attributes": {
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresLegendaryNinja"
+        ],
+        "level": 1,
+        "expedition_max_target_power": 785,
+        "expedition_min_target_power": 39,
+        "expedition_slot_id": "expedition.generation.land.t04_1",
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
+      },
+      "quantity": 1
+    },
+    "d0889d3d-e0ec-4af5-bf2e-22a0bfd3d301": {
       "templateId": "Expedition:expedition_sea_supplyrun_long_t04",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
         "expedition_criteria": [],
         "level": 1,
         "expedition_max_target_power": 725,
         "expedition_min_target_power": 36,
         "expedition_slot_id": "expedition.generation.sea.t04_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "5689107d-08da-4a44-b5e6-468145e9908b": {
-      "templateId": "Expedition:expedition_sea_supplyrun_long_t04",
+    "823e1b45-14c4-4de7-b2c7-df27b16078ea": {
+      "templateId": "Expedition:expedition_sea_survivorscouting_long_t04",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [],
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [
+          "RequiresEpicOutlander"
+        ],
         "level": 1,
-        "expedition_max_target_power": 725,
-        "expedition_min_target_power": 36,
+        "expedition_max_target_power": 825,
+        "expedition_min_target_power": 41,
         "expedition_slot_id": "expedition.generation.sea.t04_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "7992af9c-2998-4d85-93e3-edf70ebf679a": {
+    "d378632a-d60b-41c0-bbc9-72d2c8487479": {
       "templateId": "Expedition:expedition_air_supplyrun_long_t04",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresLegendaryOutlander"
-        ],
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [],
         "level": 1,
         "expedition_max_target_power": 735,
         "expedition_min_target_power": 36,
         "expedition_slot_id": "expedition.generation.air.t04_0",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     },
-    "af4aa874-5501-4120-90f2-2e42498f3fd2": {
+    "e1f33b2d-83c0-4085-926e-b7fa6b7e8376": {
       "templateId": "Expedition:expedition_air_supplyrun_long_t04",
       "attributes": {
-        "expedition_expiration_end_time": "2026-10-12T08:20:01.174Z",
-        "expedition_criteria": [
-          "RequiresRareNinja"
-        ],
+        "expedition_expiration_end_time": "2026-11-23T03:43:05.173Z",
+        "expedition_criteria": [],
         "level": 1,
         "expedition_max_target_power": 735,
         "expedition_min_target_power": 36,
         "expedition_slot_id": "expedition.generation.air.t04_1",
-        "expedition_expiration_start_time": "2026-10-12T06:50:01.174Z"
+        "expedition_expiration_start_time": "2026-11-23T02:13:05.173Z"
       },
       "quantity": 1
     }
@@ -64137,7 +64502,7 @@
       },
       "mfa_reward_claimed": true,
       "quest_manager": {
-        "dailyLoginInterval": "2026-10-12T01:09:24.851Z",
+        "dailyLoginInterval": "2026-11-11T23:44:04.818Z",
         "dailyQuestRerolls": 1,
         "questPoolStats": {
           "poolStats": [
@@ -64282,12 +64647,12 @@
       "xp_lost": 0,
       "mode_loadouts": [],
       "daily_rewards": {
-        "nextDefaultReward": 1,
-        "totalDaysLoggedIn": 1,
-        "lastClaimDate": "2026-10-12T00:00:00.000Z",
+        "nextDefaultReward": 7,
+        "totalDaysLoggedIn": 7,
+        "lastClaimDate": "2026-11-22T00:00:00.000Z",
         "additionalSchedules": {
           "founderspackdailyrewardtoken": {
-            "rewardsClaimed": 1,
+            "rewardsClaimed": 7,
             "claimedToday": true
           }
         }
@@ -64298,5 +64663,5 @@
       "active_loadout_index": 0
     }
   },
-  "commandRevision": 6
+  "commandRevision": 36
 }

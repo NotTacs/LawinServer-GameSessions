@@ -17,9 +17,9 @@ global.Clients = [];
 
 wss.on('connection', async (ws) => {
     ws.on('error', () => {});
-    
+
     if (ws.protocol.toLowerCase() != "xmpp") return matchmaker(ws);
-    
+
     var accountId = "";
     var jid = "";
     var id = "";
@@ -39,7 +39,7 @@ wss.on('connection', async (ws) => {
                 .attribute("id", ID)
                 .attribute("version", "1.0")
                 .attribute("xml:lang", "en").toString())
-                
+
                 if (Authenticated == true) {
                     ws.send(XMLBuilder.create("stream:features").attribute("xmlns:stream", "http://etherx.jabber.org/streams")
                     .element("ver").attribute("xmlns", "urn:xmpp:features:rosterver").up()
@@ -72,7 +72,7 @@ wss.on('connection', async (ws) => {
 
                 if (decodedBase64 && accountId && decodedBase64.length == 3) {
                     Authenticated = true;
-                    
+
                     console.log(`An xmpp client with the account id ${accountId} has logged in.`);
 
                     ws.send(XMLBuilder.create("success").attribute("xmlns", "urn:ietf:params:xml:ns:xmpp-sasl").toString());
@@ -170,12 +170,27 @@ wss.on('connection', async (ws) => {
                                 break;
 
                                 default:
-                                    ws.send(XMLBuilder.create("message")
-                                    .attribute("from", jid)
-                                    .attribute("id", msg.root.attributes.id)
-                                    .attribute("to", jid)
-                                    .attribute("xmlns", "jabber:client")
-                                    .element("body", body).up().toString());
+
+                                    var sender = global.Clients.find(i => i.client == ws);
+                                    var to = msg.root.attributes.to;
+                                    var receiver = to ? global.Clients.find(i => i.id == to || i.jid == to) : null;
+
+                                    if (receiver && sender) {
+                                        receiver.client.send(XMLBuilder.create("message")
+                                        .attribute("from", sender.jid)
+                                        .attribute("id", msg.root.attributes.id)
+                                        .attribute("to", receiver.jid)
+                                        .attribute("xmlns", "jabber:client")
+                                        .element("body", body).up().toString());
+                                    } else {
+
+                                        ws.send(XMLBuilder.create("message")
+                                        .attribute("from", jid)
+                                        .attribute("id", msg.root.attributes.id)
+                                        .attribute("to", jid)
+                                        .attribute("xmlns", "jabber:client")
+                                        .element("body", body).up().toString());
+                                    }
                             }
                         }
                     }

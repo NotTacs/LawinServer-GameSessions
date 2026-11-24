@@ -75,5 +75,33 @@
     "direction": "OUTBOUND",
     "created": "2026-10-12T02:25:53.340Z",
     "favorite": false
+  },
+  {
+    "accountId": "sama",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2026-11-06T22:16:18.385Z",
+    "favorite": false
+  },
+  {
+    "accountId": "hostgmailcom",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2026-11-06T22:17:47.405Z",
+    "favorite": false
+  },
+  {
+    "accountId": "diddy",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2026-11-07T04:48:10.576Z",
+    "favorite": false
+  },
+  {
+    "accountId": "cumware",
+    "status": "ACCEPTED",
+    "direction": "OUTBOUND",
+    "created": "2026-11-07T04:49:44.302Z",
+    "favorite": false
   }
 ]

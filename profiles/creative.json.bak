@@ -1,0 +1,165 @@
+{
+  "_id": "LawinServer",
+  "created": "0001-01-01T00:00:00.000Z",
+  "updated": "0001-01-01T00:00:00.000Z",
+  "rvn": 2,
+  "wipeNumber": 1,
+  "accountId": "LawinServer",
+  "profileId": "creative",
+  "version": "no_version",
+  "items": {
+    "b5faae00-894f-4ffa-91c8-4503aa57d81d": {
+      "attributes": {
+        "islandIndex": 1,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:sandbar_large"
+    },
+    "6a7af90d-02c5-40ef-935e-33f503fce0d7": {
+      "attributes": {
+        "islandIndex": 2,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:temperate_medium"
+    },
+    "2c52828d-fb67-4bff-94e7-6351c97be482": {
+      "attributes": {
+        "islandIndex": 3,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:theblock_season7"
+    },
+    "eea930b6-7a23-450e-a4ec-45040b5e2279": {
+      "attributes": {
+        "islandIndex": 4,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:tropical_medium"
+    },
+    "89322372-c7a0-472b-b496-7681286dd91a": {
+      "attributes": {
+        "islandIndex": 5,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:volcano_large"
+    },
+    "f8c028ec-7049-4fea-9f0c-d9ce077ab093": {
+      "attributes": {
+        "islandIndex": 6,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:arctic_competitive_medium1"
+    },
+    "6f8a488d-1c30-4635-aa15-c3e53e56f270": {
+      "attributes": {
+        "islandIndex": 7,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:arctic_medium"
+    },
+    "8c922cf1-d5c8-478b-9cdf-0d94c21365d5": {
+      "attributes": {
+        "islandIndex": 8,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:blackglass_medium"
+    },
+    "c2c30b5a-c53d-4b68-be75-59cbbe3c3592": {
+      "attributes": {
+        "islandIndex": 9,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:desert_large"
+    },
+    "6a3c8d1f-ad0c-4709-a4b9-7479cfcf29db": {
+      "attributes": {
+        "islandIndex": 10,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:flatgrass_large"
+    },
+    "60423344-5103-47ee-94b3-7286980ba9d2": {
+      "attributes": {
+        "islandIndex": 11,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:loki_large"
+    },
+    "79cb9b99-f249-40a0-aeef-8fdebd8f7ae8": {
+      "attributes": {
+        "islandIndex": 12,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:military_medium"
+    },
+    "4967f61d-2745-4679-a968-3565585de2b0": {
+      "attributes": {
+        "islandIndex": 13,
+        "last_used_date": "2021-09-24T12:48:56.455Z",
+        "level": 1
+      },
+      "quantity": 1,
+      "templateId": "CreativePlot:razor_medium"
+    },
+    "36b9fd90-0872-4f7d-aed2-7f2bb846d716": {
+      "templateId": "CreativePlot:pandora_large",
+      "attributes": {
+        "locale": "en",
+        "title": "",
+        "level": 1,
+        "islandIndex": 14
+      },
+      "quantity": 1
+    },
+    "50c82c6a-f016-4a13-886e-bcbeec23d309": {
+      "templateId": "CreativePlot:sandbar_largev2",
+      "attributes": {
+        "locale": "en",
+        "title": "Weird",
+        "level": 1,
+        "islandIndex": 15
+      },
+      "quantity": 1
+    },
+    "a324b24c-d808-4249-9b69-fd1024c15ab4": {
+      "templateId": "CreativePlot:flatgrass_largev2",
+      "attributes": {
+        "locale": "en",
+        "title": "Diddy",
+        "level": 1,
+        "islandIndex": 16
+      },
+      "quantity": 1
+    }
+  },
+  "stats": {
+    "attributes": {
+      "max_island_plots": 25
+    }
+  },
+  "commandRevision": 1
+}
